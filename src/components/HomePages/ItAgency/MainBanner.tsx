@@ -33,7 +33,7 @@ const MainBanner: React.FC = () => {
                       data-aos-duration="1000"
                       data-aos-delay="100"
                     >
-                     Mastork Data Driven Decision & Prediction
+                     Mastork Data Driven Decision  Prediction
                     </h1>
 
                     <p
