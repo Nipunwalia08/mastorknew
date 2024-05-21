@@ -438,7 +438,7 @@ const ServiceStyleTwo: React.FC = () => {
                 <div className="info-head">
                   <h2 className="title">Retail</h2>
                   <p>
-                  Mastork Automation Solutions transforms retail operations by automating order fulfillment and inventory management. Our systems reduce order processing time, minimize stockouts, and optimize stock levels using AI-powered algorithms. By improving efficiency and customer satisfaction, retailers can stay ahead of the competition and thrive in today's dynamic market.
+                  Mastork Automation Solutions transforms retail operations by automating order fulfillment and inventory management. Our systems reduce order processing time, minimize stockouts, and optimize stock levels using AI-powered algorithms. By improving efficiency and customer satisfaction, retailers can stay ahead of the competition and thrive in todays dynamic market.
                   </p>
                 </div>
 

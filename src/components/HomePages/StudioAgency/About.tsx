@@ -41,8 +41,8 @@ const About: React.FC = () => {
                   At Mastork, we are committed to providing tailored solutions that address your unique
                   challenges and goals. Our team of experts brings years of experience and a deep
                   understanding of the latest technological advancements, ensuring that we deliver
-                  impactful and future-proof solutions. Join us in revolutionizing your business
-                  operations and unlocking new opportunities in today's dynamic market landscape.
+                  impactful and future proof solutions. Join us in revolutionizing your business
+                  operations and unlocking new opportunities in todays dynamic market landscape.
                   With Mastork, you can confidently navigate the digital transformation journey and
                   achieve sustainable growth.
                   </p>

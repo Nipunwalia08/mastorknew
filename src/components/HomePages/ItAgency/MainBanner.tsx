@@ -36,14 +36,14 @@ const MainBanner: React.FC = () => {
                      Mastork Data Driven Decision  Prediction
                     </h1>
 
-                    <p
+                    {/* <p
                       data-aos="fade-in"
                       data-aos-duration="1000"
                       data-aos-delay="200"
                     >
                       In today's data-rich business environment, leveraging insights from data is essential for informed decision-making.Leveraging the power of data science, our solutions enable organizations to optimize various aspects of their operations. From demand forecasting to inventory optimization and process mining, our tools intelligize data to drive quality decision-making and operational excellence.
 
-                    </p>
+                    </p> */}
 
                     <Link 
                       href="/contact-us/" 

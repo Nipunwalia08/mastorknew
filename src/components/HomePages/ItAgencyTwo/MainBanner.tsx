@@ -37,14 +37,14 @@ const MainBanner: React.FC = () => {
                         Automation Solution
                       </h1>
 
-                      <p
+                      {/* <p
                         data-aos="fade-up" 
                         data-aos-duration="1000" 
                         data-aos-delay="200"
                       >
                         Introducing Mastork Automation Solutions, our latest innovation aimed at redefining efficiency for modern enterprises. With a focus on seamless integration and advanced technologies, our comprehensive automation offerings empower businesses to streamline processes and unlock growth opportunities in today's dynamic landscape.
 
-                      </p>
+                      </p> */}
 
                       <div
                         data-aos="fade-up" 
