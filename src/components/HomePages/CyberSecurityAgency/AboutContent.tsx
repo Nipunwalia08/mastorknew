@@ -30,7 +30,7 @@ const AboutContent: React.FC = () => {
                 data-aos-duration="1000"
                 data-aos-delay="300"
               >
-                <span className="sub-title">Cybersecurity</span>
+                {/* <span className="sub-title">Cybersecurity</span> */}
                 <h3>
                   Secure Your Clicks, <span>Secure Your</span> Business
                   Reputation

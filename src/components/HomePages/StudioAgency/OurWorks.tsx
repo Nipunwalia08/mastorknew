@@ -8,49 +8,49 @@ import Image from "next/image";
 
 const ourWorksData = [
   {
-    image: "/images/case-studies/c1.jpg",
+    image: "/images/case-studies/1.png",
     title: "Inventory and Warehouse Management",
     category: "Automation",
     viewDetails: "case-study/inventory-and-warehouse/",
   },
   {
-    image: "/images/case-studies/c2.jpg",
+    image: "/images/case-studies/2.png",
     title: "Remote Health Monitoring System",
     category: "Automation",
     viewDetails: "case-study/remote-hms",
   },
   {
-    image: "/images/case-studies/c3.jpg",
+    image: "/images/case-studies/3.png",
     title: "Mortgage Workflow Automation",
     category: "Automation",
     viewDetails: "case-study/mortage",
   },
   {
-    image: "/images/case-studies/c4.jpg",
+    image: "/images/case-studies/4.png",
     title: "Intelligent Document Processing",
     category: "Automation",
     viewDetails: "case-study/document-process",
   },
   {
-    image: "/images/case-studies/c5.jpg",
+    image: "/images/case-studies/5.png",
     title: "Championbets",
     category: "Data Driven Descision and Prediction",
     viewDetails: "case-study/championbets",
   },
   {
-    image: "/images/case-studies/c6.jpg",
+    image: "/images/case-studies/6.png",
     title: "Shift Store",
     category: "Bussiness Process Digitization",
     viewDetails: "case-study/shift-store",
   },
   {
-    image: "/images/case-studies/c7.jpg",
+    image: "/images/case-studies/7.png",
     title: "ComplyAssist",
     category: "Bussiness Process Digitization",
     viewDetails: "case-study/complyassist",
   },
   {
-    image: "/images/case-studies/c8.jpg",
+    image: "/images/case-studies/8.png",
     title: "Housing Redevlopment Process Automation",
     category: "Bussiness Process Digitization",
     viewDetails: "case-study/housing",

@@ -30,6 +30,7 @@ export default function Page() {
       <MainBanner />
 
       <div className="bg-1F1F22">
+        <h2 style={{ textAlign: 'center', color: "white", paddingTop: "20px", fontSize: "60px" }} >CYBER SECURITY</h2>
         <TopFeatures />
 
         {/* <TopServices /> */}
@@ -57,9 +58,9 @@ export default function Page() {
         {/* <LatestNews /> */}
 
         <div className="pb-100">
-        {/* <LatestNewsSlider /> */}
+          {/* <LatestNewsSlider /> */}
 
-        <CtaAreaTwo />
+          <CtaAreaTwo />
 
         </div>
       </div>

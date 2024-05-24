@@ -14,9 +14,9 @@ const network: React.FC = () => {
       <section className="case-studies-area pt-100 pb-70 " style={{ color: 'white' }}>
         <div className="container">
           <div className="section-title">
-            <h2>NETWORK INFRASTRUCTURE</h2>
-            <p>
-            At Mastork, we are excited to introduce our new vertical dedicated to providing cutting-edge infrastructure solutions tailored to meet the evolving needs of modern businesses. With a focus on reliability, scalability, and performance, our comprehensive suite of offerings ensures that your IT infrastructure remains robust and resilient in todays dynamic digital landscape.
+            <h2 style={{ color: "white" }}>NETWORK AND INFRASOLUTIONS</h2>
+            <p style={{ color: "white" }}>
+              At Mastork, we are excited to introduce our new vertical dedicated to providing cutting-edge infrastructure solutions tailored to meet the evolving needs of modern businesses. With a focus on reliability, scalability, and performance, our comprehensive suite of offerings ensures that your IT infrastructure remains robust and resilient in todays dynamic digital landscape.
             </p>
           </div>
 

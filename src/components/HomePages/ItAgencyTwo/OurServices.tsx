@@ -11,6 +11,7 @@ const servicesData = [
       "Enhance regulatory compliance, streamline budgeting, and optimize workforce management.",
     viewDetails: "",
     aosDelay: "100",
+    bgImage: "/images/automationsPictures/finance.png"
   },
   {
     iconName: "pe-7s-display2 bg-6610f2",
@@ -19,6 +20,7 @@ const servicesData = [
       "Automate resume screening, scheduling, and onboarding for efficient talent acquisition.",
     viewDetails: "",
     aosDelay: "200",
+    bgImage: "/images/automationsPictures/recruitment.png"
   },
   {
     iconName: "pe-7s-light bg-ffb700",
@@ -27,6 +29,7 @@ const servicesData = [
       "Improve fleet management and warehouse operations to boost efficiency and reduce costs.",
     viewDetails: "",
     aosDelay: "300",
+    bgImage: "/images/automationsPictures/logistics.png"
   },
   {
     iconName: "pe-7s-phone bg-fc3549",
@@ -35,6 +38,7 @@ const servicesData = [
       "Transform patient monitoring, appointment scheduling, and EHR management for better care.",
     viewDetails: "",
     aosDelay: "400",
+    bgImage: "/images/automationsPictures/healthcare.png"
   },
   {
     iconName: "pe-7s-cart bg-00d280",
@@ -43,6 +47,7 @@ const servicesData = [
       "Optimize inventory, enhance maintenance practices, and streamline workflow automation.",
     viewDetails: "",
     aosDelay: "500",
+    bgImage: "/images/automationsPictures/manufacturing.png"
   },
   {
     iconName: "pe-7s-users bg-ff612f",
@@ -51,6 +56,7 @@ const servicesData = [
       "Automate order fulfillment and inventory management to improve efficiency and customer satisfaction.",
     viewDetails: "",
     aosDelay: "600",
+    bgImage: "/images/automationsPictures/retail.png"
   },
 ];
 
@@ -70,20 +76,42 @@ const OurServices: React.FC = () => {
           <div className="row justify-content-center">
             {servicesData &&
               servicesData.slice(0, 6).map((value, i) => (
-                <div 
+                <div
                   className="col-lg-4 
-                  col-sm-6" 
+                  col-sm-6"
                   key={i}
                   data-aos="fade-in"
                   data-aos-duration="1000"
                   data-aos-delay={value.aosDelay}
                 >
-                  <div className="service-card-one bg-fcfbfb text-center">
-                    <i className={value.iconName}></i>
-                    <h3>
-                      <Link href={value.viewDetails}>{value.title}</Link>
-                    </h3>
-                    <p>{value.shortText}</p>
+                  <div className="service-card-one bg-fcfbfb text-center"
+                    style={{
+                      position: "relative",
+                      overflow: "hidden",
+                    }}>
+                    <div
+                      style={{
+                        backgroundImage: `url(${value.bgImage})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        filter: "blur(4px)",
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        zIndex: 1
+                      }}
+                    ></div>
+                    <div style={{ position: "relative", zIndex: 1, padding: "20px" }}>
+
+                      {/* <i className={value.iconName}></i> */}
+                      <h3>
+                        <Link href={value.viewDetails}>{value.title}</Link>
+                      </h3>
+                      <p style={{ color: "black", fontWeight: "600" }}>{value.shortText}</p>
+                    </div>
                   </div>
                 </div>
               ))}
