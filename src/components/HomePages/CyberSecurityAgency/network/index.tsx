@@ -16,7 +16,7 @@ const network: React.FC = () => {
           <div className="section-title">
             <h2>NETWORK INFRASTRUCTURE</h2>
             <p>
-            At Mastork, we're excited to introduce our new vertical dedicated to providing cutting-edge infrastructure solutions tailored to meet the evolving needs of modern businesses. With a focus on reliability, scalability, and performance, our comprehensive suite of offerings ensures that your IT infrastructure remains robust and resilient in today's dynamic digital landscape.
+            At Mastork, we are excited to introduce our new vertical dedicated to providing cutting-edge infrastructure solutions tailored to meet the evolving needs of modern businesses. With a focus on reliability, scalability, and performance, our comprehensive suite of offerings ensures that your IT infrastructure remains robust and resilient in todays dynamic digital landscape.
             </p>
           </div>
 

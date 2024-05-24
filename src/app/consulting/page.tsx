@@ -1,4 +1,5 @@
 import React from "react";
+import NavbarTwo from "../../components/Layouts/NavbarTwo";
 import Navbar from "../../components/Layouts/Navbar";
 import MainBanner from "../../components/HomePages/BusinessConsulting/MainBanner";
 import Features from "../../components/HomePages/BusinessConsulting/Features";
@@ -17,7 +18,8 @@ import Footer from "../../components/Layouts/Footer";
 export default function Page() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarTwo />
 
       <MainBanner />
 

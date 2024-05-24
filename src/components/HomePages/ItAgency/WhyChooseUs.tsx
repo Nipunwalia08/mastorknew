@@ -45,7 +45,7 @@ const WhyChooseUs: React.FC = () => {
                 <div className="about-text">
                   <h4>Customization and Scalability</h4>
                   <p>
-                  We understand that every business is unique. That's why we offer customizable automation solutions that can be tailored to fit your specific requirements. Our scalable solutions grow with your business, allowing you to expand and adapt your automation capabilities as needed.
+                  We understand that every business is unique. Thats why we offer customizable automation solutions that can be tailored to fit your specific requirements. Our scalable solutions grow with your business, allowing you to expand and adapt your automation capabilities as needed.
                   </p>
                 </div>
 
