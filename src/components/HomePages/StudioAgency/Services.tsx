@@ -9,7 +9,7 @@ const servicesData = [
     title: "Automation",
     shortText:
       "Streamline your operations and boost efficiency with our cutting-edge automation solutions.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "/Automation/",
     aosDelay: "100",
   },
   {
@@ -17,7 +17,7 @@ const servicesData = [
     title: "Cybersecurity and Infrastructure",
     shortText:
       "Safeguard your digital assets with our robust cybersecurity and infrastructure services.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "/cyber-security/",
     aosDelay: "200",
   },
   {
@@ -25,7 +25,7 @@ const servicesData = [
     title: "Data-Driven Decision Making",
     shortText:
       "Unlock actionable insights and drive growth with our advanced data-driven decision-making tools.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "/services/data-driven-prediction/",
     aosDelay: "300",
   },
   {
@@ -33,7 +33,7 @@ const servicesData = [
     title: "Business Process Digitisation and Automation",
     shortText:
       " Transform your business processes with our customizable SaaS solutions leveraging microsoft and other low code platforms",
-    viewDetails: "/services/service-details/",
+    viewDetails: "/process-automation/",
     aosDelay: "400",
   },
   {
@@ -41,7 +41,7 @@ const servicesData = [
     title: "Consultation and Advisory",
     shortText:
       "Navigate complex challenges with confidence, guided by our expert consultation and advisory services.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "/consultation",
     aosDelay: "500",
   },
   // {

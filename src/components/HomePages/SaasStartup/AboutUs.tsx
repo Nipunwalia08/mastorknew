@@ -26,18 +26,14 @@ const AboutUs: React.FC = () => {
               <div className="saas-about-content white-color">
                 <span className="sub-title">ABOUT US</span>
                 <h2>
-                  We Provide Our Business Services According To The Needs Of The
-                  Customer
+                Empowering Business Transformation through Digital Workflows
                 </h2>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum.
+                In todays fast-paced business environment, digitization is crucial for enhancing productivity, fostering creativity, and streamlining operations. Mastork leverages both off-the-shelf SaaS offerings and customized solutions to help businesses transform manual processes into efficient digital workflows. This transformation provides 100% transparency and real-time visibility into operational performance, expediting decision-making and maximizing resource utilization for sustainable and profitable growth.
                 </p>
 
-                <ul className="features-list">
+                {/* <ul className="features-list">
                   <li>
                     <i className="fas fa-check-circle"></i> Stet clita kasd
                     gubergren no sea takimata sanctus
@@ -46,11 +42,11 @@ const AboutUs: React.FC = () => {
                     <i className="fas fa-check-circle"></i> Duis autem vel eum
                     iriure dolor in hendrerit.
                   </li>
-                </ul>
+                </ul> */}
 
-                <Link href="/about" className="default-btn-two">
+                {/* <Link href="/about" className="default-btn-two">
                   Learn More <i className="fas fa-chevron-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

@@ -33,7 +33,7 @@
 
 //       <FunFacts />
 
-//       <LatestNewsSlider />
+//       {/* <LatestNewsSlider /> */}
 
 //       <CtaArea />
 
@@ -71,11 +71,11 @@ export default function Page() {
 
       <OurWorks />
 
-      <FunFactsTwo />
+      {/* <FunFactsTwo />
 
-      <Feedback />
+      <Feedback /> */}
 
-      <LatestNewsSlider />
+       {/* <LatestNewsSlider /> */} 
 
       <CtaAreaTwo />
 

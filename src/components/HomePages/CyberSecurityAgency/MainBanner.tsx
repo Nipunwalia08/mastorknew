@@ -29,7 +29,7 @@ const MainBanner: React.FC = () => {
                   data-aos-duration="1000"
                   data-aos-delay="100"
                 >
-                  No #1 Cyber Security Company Of The World
+                  Leading Cyber Security Company Of The World
                 </span>
 
                 <h1
@@ -37,7 +37,8 @@ const MainBanner: React.FC = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  We Provide The Best Cyber Security
+                  
+Cybersecurity & Network Solutions
                 </h1>
 
                 <p
@@ -61,14 +62,14 @@ const MainBanner: React.FC = () => {
                       Contact Us <i className="fa-solid fa-chevron-right"></i>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <div
                       onClick={() => setToggler(!toggler)}
                       className="video-btn"
                     >
                       <i className="fa-solid fa-play"></i>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

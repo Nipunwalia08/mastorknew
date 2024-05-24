@@ -6,34 +6,34 @@ import Link from "next/link";
 const servicesData = [
   {
     iconName: "fa-solid fa-gear",
-    title: "Product Engineering",
+    title: "Expertise and Innovation",
     shortText:
-      "Lorem ipsum dolor sit amet, tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    serviceDetailsLink: "/services/service-details/",
+      "Leverage our years of experience and advanced technology to drive your digital transformation.",
+    serviceDetailsLink: "",
     aosDelay: "100",
   },
   {
     iconName: "fa-solid fa-building-lock",
-    title: "Security Design",
+    title: "Tailored Solutions",
     shortText:
-      "Lorem ipsum dolor sit amet, tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    serviceDetailsLink: "/services/service-details/",
+      "Transform your business with tailored solutions that enhance efficiency and drive growth.",
+    serviceDetailsLink: "",
     aosDelay: "200",
   },
   {
     iconName: "fa-solid fa-certificate",
-    title: "License Management",
+    title: "Comprehensive Tools",
     shortText:
-      "Lorem ipsum dolor sit amet, tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    serviceDetailsLink: "/services/service-details/",
+      "Access a full suite of tools and services, from advanced analytics to real-time monitoring.",
+    serviceDetailsLink: "",
     aosDelay: "300",
   },
   {
     iconName: "fa-solid fa-file-pen",
-    title: "Release Planning",
+    title: "Data-Driven Decisions",
     shortText:
-      "Lorem ipsum dolor sit amet, tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    serviceDetailsLink: "/services/service-details/",
+      "Transform raw data into actionable insights for informed decision-making.",
+    serviceDetailsLink: "",
     aosDelay: "400",
   },
 ];
@@ -44,11 +44,10 @@ const Services: React.FC = () => {
       <div className="bg-dark with-black-border pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            <span className="sub-title">OUR SERVICES</span>
-            <h2>Powerful Services Offered in SaaS Application Development</h2>
+            <span className="sub-title">Why Us</span>
+            <h2>Why Choose Mastork for Business Process Digitization & Automation?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Transform your business with tailored, innovative digital solutions that enhance efficiency, drive growth, and provide exceptional support.
             </p>
           </div>
 

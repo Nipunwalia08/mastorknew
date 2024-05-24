@@ -46,11 +46,11 @@ const WhyChooseUs: React.FC = () => {
                   </li>
                 </ul>
 
-                <div className="choose-btn">
+                {/* <div className="choose-btn">
                   <Link href="/contact-us/" className="default-btn-two">
                     Get Started <i className="fa-solid fa-chevron-right"></i>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
 

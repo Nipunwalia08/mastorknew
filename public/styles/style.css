@@ -1476,6 +1476,12 @@ About CSS
 /*================================================
 Case Studies CSS
 =================================================*/
+/* .case-studies-area .section-title h2,
+.case-studies-area .section-title p,
+.case-studies-area .case-studies-tabs .react-tabs__tab {
+  color: white;
+} */
+
 .case-studies-area .view-more-work {
   text-align: center;
   margin-top: 20px;
@@ -1585,7 +1591,7 @@ Case Studies CSS
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  color: #646464;
+  color: #f9f8f8;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;

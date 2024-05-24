@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+// import AboutContent from "./AboutContent";
+// import Network from "./network";
 
 const topFeaturesData = [
   {
@@ -16,12 +18,13 @@ const topFeaturesData = [
     aosDelay: "300"
   },
   {
-    title: "4. Complete Website Security",
+    title: "4. Complete System Security",
     aosDelay: "400"
   },
 ];
 
 const TopFeatures: React.FC = () => {
+  
   return (
     <>
       <div className="cs-card-area">

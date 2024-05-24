@@ -17,9 +17,9 @@ export default function Page() {
 
       <ContactForm />
 
-      <div className="ptb-100">
+      {/* <div className="ptb-100">
         <Newsletter />
-      </div>
+      </div> */}
 
       <Footer />
     </>

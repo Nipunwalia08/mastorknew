@@ -19,7 +19,7 @@ const MainBanner: React.FC = () => {
                   data-aos-duration="1000"
                   data-aos-delay="100"
                 >
-                  Pungent is Most Powerful SaaS Solution
+                  Mastork Business Process Digitization & Automation
                 </h1>
                 
                 <p
@@ -27,9 +27,7 @@ const MainBanner: React.FC = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                  Leveraging MICROSOFT
                 </p>
 
                 <Link

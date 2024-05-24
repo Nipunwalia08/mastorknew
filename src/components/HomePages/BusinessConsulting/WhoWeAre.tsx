@@ -27,20 +27,15 @@ const WhoWeAre: React.FC = () => {
                 data-aos-delay="100"
               >
                 <span className="sub-title">WHO WE ARE</span>
-                <h2>
-                  Pungent global consulting firm is working with more than 1200+
-                  people that are working from more than 15 countries to help
-                  our clients to meet his/her desirable goal in such a great
-                  way.
-                </h2>
+                {/* <h2>
+                  At Mastork Technologies, we are a dynamic team of experts dedicated to driving innovation and excellence in the digital age. With a strong focus on technology and business solutions, we empower organizations to achieve their goals through cutting-edge automation, data-driven decision-making, and comprehensive cybersecurity measures. Our commitment to customer success is at the core of everything we do, ensuring that we deliver tailored solutions that meet the unique needs of each client.
+                </h2> */}
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspend sghisse ultrices gravida.
+                At Mastork Technologies, we are a dynamic team of experts dedicated to driving innovation and excellence in the digital age. With a strong focus on technology and business solutions, we empower organizations to achieve their goals through cutting-edge automation, data-driven decision-making, and comprehensive cybersecurity measures. Our commitment to customer success is at the core of everything we do, ensuring that we deliver tailored solutions that meet the unique needs of each client.
                 </p>
-                <Link href="/about" className="default-btn-two">
+                {/* <Link href="/about" className="default-btn-two">
                   Read More <i className="fas fa-chevron-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
 
@@ -52,12 +47,12 @@ const WhoWeAre: React.FC = () => {
                 data-aos-delay="200"
               >
                 <Image src={whoWeAreImg} alt="image" width={720} height={577} />
-                <div
+                {/* <div
                   onClick={() => setToggler(!toggler)}
                   className="video-btn popup-video"
                 >
                   <i className="fas fa-play"></i>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

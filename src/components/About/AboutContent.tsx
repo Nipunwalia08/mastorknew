@@ -1,25 +1,23 @@
 "use client";
 
-import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import React from "react";
 import Image from "next/image";
 
-import aboutImg from "../../../public/images/about-img2.jpg";
+import aboutImg from '../../../public/images/about-img4.jpg';
 
-const AboutContent: React.FC = () => {
-  const [toggler, setToggler] = useState(false);
+const About: React.FC = () => {
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
       <div className="about-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 col-md-12">
-              <div className="about-image">
+              <div 
+                className="about-image"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <Image
                   src={aboutImg}
                   alt="image"
@@ -27,49 +25,40 @@ const AboutContent: React.FC = () => {
                   width={500}
                   height={750}
                 />
-
-                <div className="video-box">
-                  <div
-                    className="video-btn"
-                    onClick={() => setToggler(!toggler)}
-                  >
-                    <i className="fa-solid fa-play"></i>
-                  </div>
-                </div>
               </div>
             </div>
 
             <div className="col-lg-7 col-md-12">
-              <div className="about-content about-content-two">
+              <div 
+                className="about-content about-content-two"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
                 <div className="section-title">
                   <h2>About Us</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, con se ctetur adipiscing elit.
-                    In sagittis eg esta ante, sed viverra nunc tinci dunt nec
-                    elei fend et tiram.
+                  At Mastork, we are committed to providing tailored solutions that address your unique
+                  challenges and goals. Our team of experts brings years of experience and a deep
+                  understanding of the latest technological advancements, ensuring that we deliver
+                  impactful and future proof solutions. Join us in revolutionizing your business
+                  operations and unlocking new opportunities in todays dynamic market landscape.
+                  With Mastork, you can confidently navigate the digital transformation journey and
+                  achieve sustainable growth.
                   </p>
                 </div>
 
                 <div className="about-text">
-                  <h4>Who We Are</h4>
+                  <h4>Our Vision</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis..
+                  To be a global leader in technology-driven solutions, empowering businesses to
+                  achieve unparalleled efficiency, innovation, and growth through the seamless
+                  integration of cutting edge ai and digital technologies
                   </p>
                 </div>
 
-                <div className="about-text">
-                  <h4>Our History</h4>
-                  <p>
-                    But I must explain to you how all this mistaken idea of
-                    denouncing pleasure and praising pain was born and I will
-                    give you a complete account of the.
-                  </p>
-                </div>
-
-                <div className="about-text">
-                  <h4>Our Mission</h4>
+                {/* <div className="about-text">
+                  <h4>Our Success</h4>
                   <ul>
                     <li>
                       <i className="fa-solid fa-circle-check"></i>
@@ -79,16 +68,25 @@ const AboutContent: React.FC = () => {
                     <li>
                       <i className="fa-solid fa-circle-check"></i>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout.
+                      distracted by the readable.
                     </li>
                     <li>
                       <i className="fa-solid fa-circle-check"></i>
                       Contrary to popular belief, Lorem Ipsum is not simply
-                      random text. It has roots in a piece of classical Latin
-                      literature.
+                      random text.
                     </li>
                   </ul>
+                </div> */}
+
+                <div className="about-text">
+                  <h4>Our Mission</h4>
+                  <p>
+                  To revolutionize business operations by delivering innovative, data-driven solutions
+                  that enhance productivity, security, and strategic decision-making. We are committed
+                  to providing exceptional service and expertise, fostering a culture of continuous
+                  improvement and excellence, and driving sustainable success for our customers in
+                  the digital era
+                  </p>
                 </div>
               </div>
             </div>
@@ -99,4 +97,4 @@ const AboutContent: React.FC = () => {
   );
 };
 
-export default AboutContent;
+export default About;

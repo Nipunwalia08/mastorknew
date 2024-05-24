@@ -16,26 +16,26 @@ interface FunFact {
 const funFactsData: FunFact[] = [
   {
     iconName: "fa-solid fa-circle-check",
-    number: "980+",
-    shortText: "Completed Projects",
+    number: "120+",
+    shortText: "Employees",
     aosDelay: "100",
   },
   {
     iconName: "fa-solid fa-heart",
-    number: "950+",
+    number: "100+",
     shortText: "Happy Clients",
     aosDelay: "200",
   },
   {
     iconName: "fa-solid fa-list-check",
-    number: "780+",
-    shortText: "Ongoing Projects",
+    number: "5",
+    shortText: "Services",
     aosDelay: "300",
   },
   {
     iconName: "fa-solid fa-trophy",
-    number: "70+",
-    shortText: "Winning Awards",
+    number: "3",
+    shortText: "Partners",
     aosDelay: "400",
   },
 ];
@@ -47,10 +47,10 @@ const FunFactsTwo: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <h2>We always try to understand users expectation</h2>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
           </div>
 
           <div className="row justify-content-center">

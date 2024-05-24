@@ -7,52 +7,52 @@ import Image from "next/image";
 const servicesData = [
   {
     image: "/images/business-consulting/services-img1.jpg",
-    title: "Sales & Marketing",
+    title: "Business Strategy Development",
     shortText:
-      "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
-    serviceDetailsLink: "/services/service-details/",
+      "Create a clear, actionable roadmap for your business's future, aligned with your vision and goals.",
+    serviceDetailsLink: "",
     aosDelay: "100",
   },
   {
     image: "/images/business-consulting/services-img2.jpg",
-    title: "Cost Transformation",
+    title: "Operational Efficiency",
     shortText:
-      "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
-    serviceDetailsLink: "/services/service-details/",
+      "Identify and implement improvements in your processes, enhancing productivity and reducing costs.",
+    serviceDetailsLink: "",
     aosDelay: "200",
   },
   {
     image: "/images/business-consulting/services-img3.jpg",
-    title: "Sustainability",
+    title: "Risk Management",
     shortText:
-      "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
-    serviceDetailsLink: "/services/service-details/",
+      "Mitigate risks and ensure compliance with industry standards and regulations, protecting your business.",
+    serviceDetailsLink: "",
     aosDelay: "300",
   },
   {
     image: "/images/business-consulting/services-img4.jpg",
-    title: "Strategy",
+    title: "Technology Integration",
     shortText:
-      "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
-    serviceDetailsLink: "/services/service-details/",
+      "Maximize the potential of your technology investments with our guidance on integrating and leveraging the latest tools and systems.",
+    serviceDetailsLink: "",
     aosDelay: "400",
   },
   {
     image: "/images/business-consulting/services-img5.jpg",
-    title: "Customer Experience",
+    title: "Market Analysis",
     shortText:
-      "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
-    serviceDetailsLink: "/services/service-details/",
+      "Stay ahead of market trends and dynamics with our insights, enabling you to make strategic decisions that position your business for success.",
+    serviceDetailsLink: "",
     aosDelay: "500",
   },
-  {
-    image: "/images/business-consulting/services-img6.jpg",
-    title: "Profit Planning",
-    shortText:
-      "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
-    serviceDetailsLink: "/services/service-details/",
-    aosDelay: "600",
-  },
+  // {
+  //   image: "/images/business-consulting/services-img6.jpg",
+  //   title: "Profit Planning",
+  //   shortText:
+  //     "Lorem ipsum dolor sit amet, cons e ctetur adipiscing elit, sed do eiu smod.",
+  //   serviceDetailsLink: "/services/service-details/",
+  //   aosDelay: "600",
+  // },
 ];
 
 const Services: React.FC = () => {
@@ -90,12 +90,12 @@ const Services: React.FC = () => {
                         </Link>
                       </h3>
                       <p>{value.shortText}</p>
-                      <Link
+                      {/* <Link
                         href={value.serviceDetailsLink}
                         className="link-btn"
                       >
                         Read More <i className="fas fa-chevron-right"></i>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>

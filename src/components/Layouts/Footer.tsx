@@ -33,30 +33,27 @@ const Footer: React.FC = () => {
 
                 <p>
                 Mastork Technologies is a progressive technology company committed to using
- artificial intelligence (AI) and digital innovation to transform businesses. With an
- emphasis on network infrastructure, AI automation, cybersecurity, data-driven
- decision making, and business process digitization, we offer complete solutions that
- are specifically designed to satisfy the demands of contemporary businesses.
+ artificial intelligence (AI) and digital innovation to transform businesses. 
                 </p>
 
                 <ul className="social-links">
-                  <li>
+                  {/* <li>
                     <a href="https://www.facebook.com/" target="_blank">
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <a href="https://twitter.com/" target="_blank">
                       <i className="fa-brands fa-twitter"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="https://linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/company/mastork/" target="_blank">
                       <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/mastork.ai/" target="_blank">
                       <i className="fa-brands fa-instagram"></i>
                     </a>
                   </li>
@@ -90,15 +87,15 @@ const Footer: React.FC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/portfolio/">
-                      Portfolio
+                    <Link href="/case-study">
+                      Case Study
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/team/">
                       Team
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -118,7 +115,7 @@ const Footer: React.FC = () => {
                       Contact Us
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/pricing/">
                       Pricing
                     </Link>
@@ -127,7 +124,7 @@ const Footer: React.FC = () => {
                     <Link href="/faq/">
                       Faq
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/privacy-policy/">
                       Privacy Policy

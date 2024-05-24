@@ -37,7 +37,7 @@ export default function Page() {
 
       <FunFactsTwo />
 
-      <LatestNewsSlider />
+      {/* <LatestNewsSlider /> */}
 
       <CtaArea />
 

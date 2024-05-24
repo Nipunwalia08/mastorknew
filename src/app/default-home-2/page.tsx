@@ -34,7 +34,7 @@ export default function Page() {
 
       <FunFacts />
 
-      <LatestNewsSlider />
+      {/* <LatestNewsSlider /> */}
 
       <CtaArea />
 

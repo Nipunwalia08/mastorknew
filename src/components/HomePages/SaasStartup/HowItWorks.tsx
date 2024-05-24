@@ -8,23 +8,23 @@ import howItWorksImg from "../../../../public/images/saas-startup/how-it-works.p
 const howItWorksData = [
   {
     iconName: "fa-solid fa-chart-line",
-    title: "Advanced Analytics",
+    title: "Customized Solutions",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      "Tailored digital workflows to meet your specific business needs, ensuring alignment with your goals and operations.",
     aosDelay: "100",
   },
   {
     iconName: "fa-solid fa-user-lock",
-    title: "High Scalability",
+    title: "Enhanced Productivity",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      "Streamline processes and boost productivity through iterative development and customized digital ecosystems.",
     aosDelay: "200",
   },
   {
     iconName: "fa-solid fa-arrows-rotate",
-    title: "Automatic Updates",
+    title: "Long-term Success",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      "Position your business for sustainable growth and long-term success in a rapidly changing market.",
     aosDelay: "300",
   },
 ];
@@ -35,11 +35,10 @@ const HowItWorks: React.FC = () => {
       <div className="bg-dark ptb-100">
         <div className="container">
           <div className="section-title">
-            <span className="sub-title">HOW IT WORKS</span>
-            <h2>One Of The Three Main Categories Of SaaS Solution</h2>
+            <span className="sub-title">Our Offerings</span>
+            <h2>SaaS Garage (Customized Solution)</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Embrace innovation with our customized solution, SaaS Garage, tailored to meet your specific business needs. We collaborate closely with your team to develop custom digital solutions that align perfectly with your objectives and operations. Through iterative development and customization, we create a digital ecosystem that enhances productivity, streamlines processes, and drives growth. 
             </p>
           </div>
 

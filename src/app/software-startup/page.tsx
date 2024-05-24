@@ -39,7 +39,7 @@ export default function Page() {
 
       <AppDownload />
 
-      <LatestNewsSlider />
+      {/* <LatestNewsSlider /> */}
 
       <CtaAreaTwo />
 

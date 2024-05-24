@@ -11,10 +11,11 @@ const MegaMenu: React.FC = () => {
     <>
       <li className="nav-item">
         <Link href="#" className="nav-link" onClick={(e) => e.preventDefault()}>
-          Home <i className="fa-solid fa-angle-down"></i>
+          Home 
+          {/* <i className="fa-solid fa-angle-down"></i> */}
         </Link>
 
-        <ul className="dropdown-menu mega-dropdown-menu">
+        {/* <ul className="dropdown-menu mega-dropdown-menu">
           <li className="nav-item">
             <Link
               href="/"
@@ -232,7 +233,7 @@ const MegaMenu: React.FC = () => {
               Cyber Security Agency <span className="new">New</span>
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </li>
     </>
   );

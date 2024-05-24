@@ -9,7 +9,7 @@ const servicesData = [
     title: "Finance",
     shortText:
       "Enhance regulatory compliance, streamline budgeting, and optimize workforce management.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "",
     aosDelay: "100",
   },
   {
@@ -17,7 +17,7 @@ const servicesData = [
     title: "Recruitment",
     shortText:
       "Automate resume screening, scheduling, and onboarding for efficient talent acquisition.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "",
     aosDelay: "200",
   },
   {
@@ -25,7 +25,7 @@ const servicesData = [
     title: "Logistics",
     shortText:
       "Improve fleet management and warehouse operations to boost efficiency and reduce costs.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "",
     aosDelay: "300",
   },
   {
@@ -33,7 +33,7 @@ const servicesData = [
     title: "Healthcare",
     shortText:
       "Transform patient monitoring, appointment scheduling, and EHR management for better care.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "",
     aosDelay: "400",
   },
   {
@@ -41,7 +41,7 @@ const servicesData = [
     title: "Manufacturing",
     shortText:
       "Optimize inventory, enhance maintenance practices, and streamline workflow automation.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "",
     aosDelay: "500",
   },
   {
@@ -49,7 +49,7 @@ const servicesData = [
     title: "Retail",
     shortText:
       "Automate order fulfillment and inventory management to improve efficiency and customer satisfaction.",
-    viewDetails: "/services/service-details/",
+    viewDetails: "",
     aosDelay: "600",
   },
 ];

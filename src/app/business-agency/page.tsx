@@ -38,7 +38,7 @@ export default function Page() {
 
       <CtaAreaTwo />
 
-      <LatestNewsSlider />
+      {/* <LatestNewsSlider /> */}
 
       <Footer />
     </>

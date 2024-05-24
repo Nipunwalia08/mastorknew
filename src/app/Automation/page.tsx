@@ -39,7 +39,7 @@ export default function Page() {
       <PricingStyleThree /> */}
 
       {/* <LatestNewsSliderTwo /> */}
-      <LatestNewsSlider />
+      {/* <LatestNewsSlider /> */}
 
       <CtaAreaTwo />
 

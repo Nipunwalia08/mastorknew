@@ -20,7 +20,7 @@ const featuresData = [
   },
   {
     iconName: "fa-solid fa-users-rays",
-    title: "Sales Consulting",
+    title: "Market Analysis",
     aosDelay: "400",
   },
 ];

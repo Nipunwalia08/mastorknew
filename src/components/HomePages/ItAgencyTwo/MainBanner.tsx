@@ -51,7 +51,7 @@ const MainBanner: React.FC = () => {
                         data-aos-duration="1300" 
                         data-aos-delay="300"
                       >
-                        <Link href="/contact-us/" className="btn btn-primary">
+                        {/* <Link href="/contact-us/" className="btn btn-primary">
                           Get Started
                         </Link>
 
@@ -60,7 +60,7 @@ const MainBanner: React.FC = () => {
                           onClick={() => setToggler(!toggler)}
                         >
                           <i className="fa-solid fa-play me-1"></i> How it works
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </div>

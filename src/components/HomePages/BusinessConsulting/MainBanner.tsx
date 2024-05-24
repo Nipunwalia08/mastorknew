@@ -19,7 +19,7 @@ const MainBanner: React.FC = () => {
               data-aos-duration="1000"
               data-aos-delay="100"
             >
-              We Are Always As Your Service For Any Business Consulting
+              Navigate Complex Challenges with Expert Guidance
             </h1>
 
             <p
@@ -27,8 +27,7 @@ const MainBanner: React.FC = () => {
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              In today's fast-paced and ever-changing business world, making the right decisions is more important than ever. Our Consultation and Advisory services are here to provide you with the personalized support and expert insights you need to tackle your toughest challenges and seize new opportunities.
             </p>
 
             <Link 

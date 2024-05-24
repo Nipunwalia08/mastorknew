@@ -2,38 +2,40 @@
 
 import React from "react";
 import Link from "next/link";
+import AboutContent from "./AboutContent";
+import Network from "./network";
 
 const topServicesData = [
   {
-    image: "/images/cyber-security/features/features-1.jpg",
-    title: "Application Security",
+    image: "/images/cyber-security/features/features-3.jpg",
+    title: "Cybersecurity",
     shortText:
-      "Lorem ipsum dolor sit amLorem ipsum dolor sit amet is consectetur adipiscing elit sed do.",
+      "We prioritize safeguarding your digital assets and ensuring uninterrupted business operations through comprehensive cybersecurity solutions. ",
     btnText: "GET STARTED",
     btnLink: "/services/service-details/",
     bgIconName: "fa-solid fa-lock",
     aosDelay: "100",
   },
   {
-    image: "/images/cyber-security/features/features-2.jpg",
+    image: "/images/cyber-security/features/features-1.jpg",
     title: "Cloud Security",
     shortText:
-      "Lorem ipsum dolor sit amLorem ipsum dolor sit amet is consectetur adipiscing elit sed do.",
+      "Mastork introduces cutting-edge infrastructure solutions tailored to meet modern business needs, focusing on reliability, scalability, and performance.",
     btnText: "GET STARTED",
     btnLink: "/services/service-details/",
     bgIconName: "fa-solid fa-cloud",
     aosDelay: "200",
   },
-  {
-    image: "/images/cyber-security/features/features-3.jpg",
-    title: "Infrastructure Security",
-    shortText:
-      "Lorem ipsum dolor sit amLorem ipsum dolor sit amet is consectetur adipiscing elit sed do.",
-    btnText: "GET STARTED",
-    btnLink: "/services/service-details/",
-    bgIconName: "fa-solid fa-shield",
-    aosDelay: "300",
-  },
+  // {
+  //   image: "/images/cyber-security/features/features-3.jpg",
+  //   title: "Infrastructure Security",
+  //   shortText:
+  //     "Lorem ipsum dolor sit amLorem ipsum dolor sit amet is consectetur adipiscing elit sed do.",
+  //   btnText: "GET STARTED",
+  //   btnLink: "/services/service-details/",
+  //   bgIconName: "fa-solid fa-shield",
+  //   aosDelay: "300",
+  // },
 ];
 
 const TopServices: React.FC = () => {

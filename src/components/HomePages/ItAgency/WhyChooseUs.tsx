@@ -15,7 +15,7 @@ const WhyChooseUs: React.FC = () => {
         sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
       />
 
-      <section className="about-area ptb-100">
+      <section className="about-area ptb-100 bg-fcfbfb">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-12">
@@ -23,44 +23,42 @@ const WhyChooseUs: React.FC = () => {
                 className="about-content about-content-two pl-0 mt-0"
                 data-aos="fade-in"
                 data-aos-duration="1000"
-                data-aos-delay="100"
+                data-aos-delay="200"
               >
                 <div className="section-title">
-                  <h2>Why Choose Us</h2>
+                  <h2>Why Choose Data Driven Decision Prediction?</h2>
+                  
+                </div>
+
+                <div className="about-text">
+                  <h4>Expertise and Innovation</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, con se ctetur adipiscing elit.
-                    In sagittis eg esta ante, sed viverra nunc tinci dunt nec
-                    elei fend et tiram.
+                  At Mastork, we combine years of industry experience with cutting-edge technology to deliver innovative automation solutions tailored to your business needs. Our team of experts continuously stays ahead of the latest trends and advancements, ensuring your operations benefit from the most up-to-date and effective automation strategies.
+                  </p>
+                </div>
+                <div className="about-text">
+                  <h4>Comprehensive Solutions</h4>
+                  <p>
+                  Our end-to-end automation solutions cover a wide range of industries and applications, from finance and healthcare to logistics and retail. We offer a full suite of tools and services, including advanced analytics, predictive modeling, and real-time monitoring, to help you streamline operations, reduce costs, and drive growth.
+                  </p>
+                </div>
+                <div className="about-text">
+                  <h4>Customization and Scalability</h4>
+                  <p>
+                  We understand that every business is unique. That's why we offer customizable automation solutions that can be tailored to fit your specific requirements. Our scalable solutions grow with your business, allowing you to expand and adapt your automation capabilities as needed.
                   </p>
                 </div>
 
                 <div className="about-text">
-                  <h4>Who We Are</h4>
+                  <h4>Data-Driven Insights</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo.
+                  Harness the power of data with our advanced analytics and predictive modeling tools. We help you transform raw data into actionable insights, enabling informed decision-making and strategic planning. Our solutions provide you with the intelligence needed to stay ahead of the competition and drive operational excellence.
                   </p>
                 </div>
-
                 <div className="about-text">
-                  <h4>Our History</h4>
+                  <h4>Proven Track Record</h4>
                   <p>
-                    But I must explain to you how all this mistaken idea of
-                    denouncing pleasure and praising pain was born and I will
-                    give you a complete account of the system, and expound the
-                    actual teachings of the great explorer of the truth.
-                  </p>
-                </div>
-
-                <div className="about-text">
-                  <h4>Our Mission</h4>
-                  <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident, similique sunt in culpa.
+                  Our successful track record speaks for itself. We have helped numerous organizations across various industries achieve significant improvements in efficiency, accuracy, and productivity. Our clients trust us to deliver reliable, high-quality automation solutions that deliver tangible results.
                   </p>
                 </div>
               </div>
@@ -71,7 +69,7 @@ const WhyChooseUs: React.FC = () => {
                 className="about-image right-image"
                 data-aos="fade-in"
                 data-aos-duration="1000"
-                data-aos-delay="300"
+                data-aos-delay="400"
               >
                 <Image
                   src={aboutImg}
@@ -81,14 +79,14 @@ const WhyChooseUs: React.FC = () => {
                   height={750}
                 />
 
-                <div className="video-box">
+                {/* <div className="video-box">
                   <div
-                    onClick={() => setToggler(!toggler)}
                     className="video-btn"
+                    onClick={() => setToggler(!toggler)}
                   >
                     <i className="fa-solid fa-play"></i>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

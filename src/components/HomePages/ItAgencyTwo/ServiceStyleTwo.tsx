@@ -7,6 +7,9 @@ import Image from "next/image";
 import serviceImg1 from "../../../../public/images/services/it-service1.png";
 import serviceImg2 from "../../../../public/images/services/it-service2.png";
 import serviceImg3 from "../../../../public/images/services/it-service3.png";
+import serviceImg4 from "../../../../public/images/saas-startup/health.jpg";
+import serviceImg5 from "../../../../public/images/saas-startup/manuf.jpg";
+import serviceImg6 from "../../../../public/images/saas-startup/retail.jpg";
 
 const ServiceStyleTwo: React.FC = () => {
   return (
@@ -330,7 +333,7 @@ const ServiceStyleTwo: React.FC = () => {
                 data-aos-delay="300"
               >
                 <Image
-                  src={serviceImg1}
+                  src={serviceImg4}
                   alt="Service Image"
                   width={770}
                   height={582}
@@ -352,7 +355,7 @@ const ServiceStyleTwo: React.FC = () => {
                 data-aos-delay="100"
               >
                 <Image
-                  src={serviceImg2}
+                  src={serviceImg5}
                   alt="Service Image"
                   width={852}
                   height={580}
@@ -491,7 +494,7 @@ const ServiceStyleTwo: React.FC = () => {
                 data-aos-delay="300"
               >
                 <Image
-                  src={serviceImg3}
+                  src={serviceImg6}
                   alt="Service Image"
                   width={894}
                   height={582}

@@ -5,266 +5,266 @@ import Image from "next/image";
 
 const teamMemberData = [
   {
-    image: "/images/team/team5.jpg",
-    name: "Anderson",
-    designation: "CEO & Founder",
+    image: "/images/team/photo-output.jpg",
+    name: "Dhruv Garg",
+    designation: "CEO",
     aosDelay: "100",
 
     socialLinks: [
       {
         iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
+        url: "https://www.linkedin.com/in/dhruv-garg-/",
       },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
+      // {
+      //   iconName: "fa-brands fa-twitter",
+      //   url: "https://twitter.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-facebook-f",
+      //   url: "https://facebook.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-instagram",
+      //   url: "https://instagram.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-dribbble",
+      //   url: "https://dribbble.com/",
+      // },
     ],
   },
   {
-    image: "/images/team/team6.jpg",
-    name: "Rodriguez",
-    designation: "React Developer",
+    image: "/images/team/Deepak_Soni_pic.jpg",
+    name: "Deepak Soni",
+    designation: "Strategic Bussiness Advisor",
     aosDelay: "200",
 
     socialLinks: [
       {
         iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
+        url: "https://www.linkedin.com/in/deepaksoni/",
       },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
+      // {
+      //   iconName: "fa-brands fa-twitter",
+      //   url: "https://twitter.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-facebook-f",
+      //   url: "https://facebook.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-instagram",
+      //   url: "https://instagram.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-dribbble",
+      //   url: "https://dribbble.com/",
+      // },
     ],
   },
   {
-    image: "/images/team/team7.jpg",
-    name: "Thomas",
-    designation: "Angular Developer",
+    image: "/images/team/vivek_innobit_pic.jpg",
+    name: "Vivek Mudgil",
+    designation: "Technical Advisor",
     aosDelay: "300",
 
     socialLinks: [
       {
         iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
+        url: "https://www.linkedin.com/in/vmudgil/",
       },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
+      // {
+      //   iconName: "fa-brands fa-twitter",
+      //   url: "https://twitter.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-facebook-f",
+      //   url: "https://facebook.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-instagram",
+      //   url: "https://instagram.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-dribbble",
+      //   url: "https://dribbble.com/",
+      // },
     ],
   },
   {
-    image: "/images/team/team9.jpg",
-    name: "James White",
-    designation: "Marketing Manager",
+    image: "/images/team/2.jpg",
+    name: "Nipun Walia",
+    designation: "AI Strategist",
     aosDelay: "400",
 
     socialLinks: [
       {
         iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
+        url: "https://www.linkedin.com/in/nipun-walia//",
       },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
+      // {
+      //   iconName: "fa-brands fa-twitter",
+      //   url: "https://twitter.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-facebook-f",
+      //   url: "https://facebook.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-instagram",
+      //   url: "https://instagram.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-dribbble",
+      //   url: "https://dribbble.com/",
+      // },
     ],
   },
   {
-    image: "/images/team/team10.jpg",
-    name: "Johnson Lee",
-    designation: "Backend Specialist",
+    image: "/images/team/3.jpg",
+    name: "Chirag Dodiya",
+    designation: "Technical Lead",
     aosDelay: "500",
 
     socialLinks: [
       {
         iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
+        url: "https://www.linkedin.com/in/chiragdotco/",
       },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
+      // {
+      //   iconName: "fa-brands fa-twitter",
+      //   url: "https://twitter.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-facebook-f",
+      //   url: "https://facebook.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-instagram",
+      //   url: "https://instagram.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-dribbble",
+      //   url: "https://dribbble.com/",
+      // },
     ],
   },
-  {
-    image: "/images/team/team11.jpg",
-    name: "Williams Smith",
-    designation: "Front-end Specialist",
-    aosDelay: "600",
+  // {
+  //   image: "/images/team/team11.jpg",
+  //   name: "Williams Smith",
+  //   designation: "Front-end Specialist",
+  //   aosDelay: "600",
 
-    socialLinks: [
-      {
-        iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
-      },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
-    ],
-  },
-  {
-    image: "/images/team/team12.jpg",
-    name: "Brown",
-    designation: "Marketing Specialist",
-    aosDelay: "700",
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://linkedin.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-twitter",
+  //       url: "https://twitter.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-facebook-f",
+  //       url: "https://facebook.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-instagram",
+  //       url: "https://instagram.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-dribbble",
+  //       url: "https://dribbble.com/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   image: "/images/team/team12.jpg",
+  //   name: "Brown",
+  //   designation: "Marketing Specialist",
+  //   aosDelay: "700",
 
-    socialLinks: [
-      {
-        iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
-      },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
-    ],
-  },
-  {
-    image: "/images/team/team13.jpg",
-    name: "Taylor",
-    designation: "Graphics Designer",
-    aosDelay: "800",
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://linkedin.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-twitter",
+  //       url: "https://twitter.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-facebook-f",
+  //       url: "https://facebook.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-instagram",
+  //       url: "https://instagram.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-dribbble",
+  //       url: "https://dribbble.com/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   image: "/images/team/team13.jpg",
+  //   name: "Taylor",
+  //   designation: "Graphics Designer",
+  //   aosDelay: "800",
 
-    socialLinks: [
-      {
-        iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
-      },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
-    ],
-  },
-  {
-    image: "/images/team/team9.jpg",
-    name: "Tremblay",
-    designation: "SEO Specialist",
-    aosDelay: "900",
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://linkedin.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-twitter",
+  //       url: "https://twitter.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-facebook-f",
+  //       url: "https://facebook.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-instagram",
+  //       url: "https://instagram.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-dribbble",
+  //       url: "https://dribbble.com/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   image: "/images/team/team9.jpg",
+  //   name: "Tremblay",
+  //   designation: "SEO Specialist",
+  //   aosDelay: "900",
 
-    socialLinks: [
-      {
-        iconName: "fa-brands fa-linkedin-in",
-        url: "https://linkedin.com/",
-      },
-      {
-        iconName: "fa-brands fa-twitter",
-        url: "https://twitter.com/",
-      },
-      {
-        iconName: "fa-brands fa-facebook-f",
-        url: "https://facebook.com/",
-      },
-      {
-        iconName: "fa-brands fa-instagram",
-        url: "https://instagram.com/",
-      },
-      {
-        iconName: "fa-brands fa-dribbble",
-        url: "https://dribbble.com/",
-      },
-    ],
-  },
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://linkedin.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-twitter",
+  //       url: "https://twitter.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-facebook-f",
+  //       url: "https://facebook.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-instagram",
+  //       url: "https://instagram.com/",
+  //     },
+  //     {
+  //       iconName: "fa-brands fa-dribbble",
+  //       url: "https://dribbble.com/",
+  //     },
+  //   ],
+  // },
 ];
 
 const TeamStyleTwo = () => {
@@ -273,11 +273,11 @@ const TeamStyleTwo = () => {
       <div className="pt-100 pb-70 bg-fcfbfb">
         <div className="container">
           <div className="section-title">
-            <h2>All Team Members</h2>
-            <p>
+            <h2>Meet Our Team</h2>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
           </div>
 
           <div className="row justify-content-center">

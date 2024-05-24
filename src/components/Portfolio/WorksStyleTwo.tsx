@@ -6,46 +6,60 @@ import Image from "next/image";
 
 const ourWorksData = [
   {
-    image: "/images/works/work1.jpg",
-    title: "Designing a better cinema experience",
-    category: "Development",
-    viewDetails: "/portfolio/portfolio-details/",
+    image: "/images/case-studies/c1.jpg",
+    title: "Inventory and Warehouse Management",
+    category: "Automation",
+    viewDetails: "inventory-and-warehouse/",
     aosDelay: "100",
   },
   {
-    image: "/images/works/work2.jpg",
-    title: "Building design process within teams",
-    category: "Web Design",
-    viewDetails: "/portfolio/portfolio-details/",
+    image: "/images/case-studies/c2.jpg",
+    title: "Remote Health Monitoring System",
+    category: "Automation",
+    viewDetails: "remote-hms",
     aosDelay: "200",
   },
   {
-    image: "/images/works/work3.jpg",
-    title: "How intercom brings play into their design process",
-    category: "eCommerce",
-    viewDetails: "/portfolio/portfolio-details/",
+    image: "/images/case-studies/c3.jpg",
+    title: "Mortgage Workflow Automation",
+    category: "Automation",
+    viewDetails: "mortage",
     aosDelay: "300",
   },
   {
-    image: "/images/works/work4.jpg",
-    title: "Stuck with to-do list, I created a new app for myself",
-    category: "Email Marketing",
-    viewDetails: "/portfolio/portfolio-details/",
+    image: "/images/case-studies/c4.jpg",
+    title: "Intelligent Document Processing",
+    category: "Automation",
+    viewDetails: "document-process",
     aosDelay: "400",
   },
   {
-    image: "/images/works/work5.jpg",
-    title: "Examples of different types of sprints",
-    category: "Marketing & Reporting",
-    viewDetails: "/portfolio/portfolio-details/",
+    image: "/images/case-studies/c5.jpg",
+    title: "Championbets",
+    category: "Data Driven Descision and Prediction",
+    viewDetails: "championbets",
     aosDelay: "500",
   },
   {
-    image: "/images/works/work6.jpg",
-    title: "Redesigning the New York times app",
-    category: "App Development",
-    viewDetails: "/portfolio/portfolio-details/",
+    image: "/images/case-studies/c6.jpg",
+    title: "Shift Store",
+    category: "Bussiness Process Digitization",
+    viewDetails: "shift-store",
     aosDelay: "600",
+  },
+  {
+    image: "/images/case-studies/c7.jpg",
+    title: "ComplyAssist",
+    category: "Bussiness Process Digitization",
+    viewDetails: "complyassist",
+    aosDelay: "700",
+  },
+  {
+    image: "/images/case-studies/c8.jpg",
+    title: "Housing Redevlopment Process Automation",
+    category: "Bussiness Process Digitization",
+    viewDetails: "housing",
+    aosDelay: "800",
   },
 ];
 
@@ -55,16 +69,16 @@ const WorksStyleTwo: React.FC = () => {
       <div className="case-studies-area ptb-100 bg-fcfbfb">
         <div className="container">
           <div className="section-title">
-            <h2>Our All Projects</h2>
-            <p>
+            <h2>Our Projects</h2>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
           </div>
 
           <div className="row justify-content-center">
             {ourWorksData &&
-              ourWorksData.slice(0, 6).map((value, i) => (
+              ourWorksData.slice(0, 8).map((value, i) => (
                 <div
                   className="col-lg-4 col-sm-6"
                   key={i}
@@ -98,11 +112,11 @@ const WorksStyleTwo: React.FC = () => {
               ))}
           </div>
 
-          <div className="view-more-work">
+          {/* <div className="view-more-work">
             <Link href="/portfolio" className="btn btn-primary">
               <i className="fa-solid fa-list-check me-1"></i> View More
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
