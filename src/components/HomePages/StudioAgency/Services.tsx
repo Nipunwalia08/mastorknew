@@ -25,7 +25,7 @@ const servicesData = [
     title: "Data-Driven Decision Making",
     shortText:
       "Unlock actionable insights and drive growth with our advanced data-driven decision-making tools.",
-    viewDetails: "/services/data-driven-prediction/",
+    viewDetails: "/data-driven-prediction/",
     aosDelay: "300",
   },
   {
@@ -41,7 +41,7 @@ const servicesData = [
     title: "Consultation and Advisory",
     shortText:
       "Navigate complex challenges with confidence, guided by our expert consultation and advisory services.",
-    viewDetails: "/consultation",
+    viewDetails: "/consulting",
     aosDelay: "500",
   },
   // {
