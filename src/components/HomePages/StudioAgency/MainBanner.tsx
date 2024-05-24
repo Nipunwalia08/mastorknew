@@ -49,7 +49,7 @@ const MainBanner: React.FC = () => {
                       data-aos-duration="1000"
                       data-aos-delay="200"
                     >
-                     Your Gateway to Strategic Automation
+                     Turning Vision into Reality
                     </h1>
 
                     <p
@@ -57,7 +57,7 @@ const MainBanner: React.FC = () => {
                       data-aos-duration="1000"
                       data-aos-delay="400"
                     >
-                      AI Solutions Redefining Your Path to Success Today
+                      Mastork unlocks potential. We provide automation, provide data insights & security solutions to streamline workflows, empower informed decisions & safeguard your business.
                     </p>
 
                     <Link 

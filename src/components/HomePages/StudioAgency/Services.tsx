@@ -3,6 +3,8 @@
 import React from "react";
 import Link from "next/link";
 
+import aboutImg from '../../../../public/images/secure.png';
+
 const servicesData = [
   {
     iconName: "pe-7s-rocket bg-13c4a1",
@@ -11,6 +13,7 @@ const servicesData = [
       "Streamline your operations and boost efficiency with our cutting-edge automation solutions.",
     viewDetails: "/Automation/",
     aosDelay: "100",
+    bgImage: "../../../public/images/secure.png"
   },
   {
     iconName: "pe-7s-diamond bg-6610f2",
@@ -19,6 +22,7 @@ const servicesData = [
       "Safeguard your digital assets with our robust cybersecurity and infrastructure services.",
     viewDetails: "/cyber-security/",
     aosDelay: "200",
+    bgImage: "./"
   },
   {
     iconName: "pe-7s-light bg-ffb700",
@@ -27,6 +31,7 @@ const servicesData = [
       "Unlock actionable insights and drive growth with our advanced data-driven decision-making tools.",
     viewDetails: "/data-driven-prediction/",
     aosDelay: "300",
+    bgImage: ""
   },
   {
     iconName: "pe-7s-target bg-fc3549",
@@ -35,6 +40,7 @@ const servicesData = [
       " Transform your business processes with our customizable SaaS solutions leveraging microsoft and other low code platforms",
     viewDetails: "/process-automation/",
     aosDelay: "400",
+    bgImage: ""
   },
   {
     iconName: "pe-7s-film bg-00d280",
@@ -43,6 +49,7 @@ const servicesData = [
       "Navigate complex challenges with confidence, guided by our expert consultation and advisory services.",
     viewDetails: "/consulting",
     aosDelay: "500",
+    bgImage: ""
   },
   // {
   //   iconName: "pe-7s-users bg-ff612f",
@@ -77,7 +84,14 @@ const Services: React.FC = () => {
                   data-aos="fade-in"
                   data-aos-duration="1000"
                   data-aos-delay={value.aosDelay}
+                  // style={{
+                  //   backgroundImage: `url(${value.bgImage})`,
+                  //   backgroundSize: "cover",
+                  //   backgroundPosition: "center",
+                  //   backgroundRepeat: "no-repeat",
+                  // }}
                 >
+                  
                   <div className="service-card-one white-bg border">
                     <i className={value.iconName}></i>
                     <h3>

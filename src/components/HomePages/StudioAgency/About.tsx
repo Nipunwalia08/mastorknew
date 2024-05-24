@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import aboutImg from '../../../../public/images/about-img4.jpg';
+import aboutImg from '../../../../public/images/about-img1.jpg';
 
 const About: React.FC = () => {
   return (

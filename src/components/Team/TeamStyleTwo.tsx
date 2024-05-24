@@ -63,7 +63,7 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/vivek_innobit_pic.jpg",
+    image: "/images/team/Vivek_innobit_pic.jpg",
     name: "Vivek Mudgil",
     designation: "Technical Advisor",
     aosDelay: "300",
