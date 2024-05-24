@@ -55,7 +55,7 @@ const partnersData = [
     aosDelay: "1000",
   },
   {
-    image: "/images/partners/brand11.jpeg",
+    image: "/images/partners/Polar .png",
     link: "#",
     aosDelay: "1100",
   },
