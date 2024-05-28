@@ -49,9 +49,8 @@ const MainBanner: React.FC = () => {
                       data-aos-duration="1000"
                       data-aos-delay="200"
                     >
-                     Turning Vision into Reality
+                      Turning Vision into Reality
                     </h1>
-
                     <p
                       data-aos="fade-in"
                       data-aos-duration="1000"
@@ -60,8 +59,8 @@ const MainBanner: React.FC = () => {
                       Mastork unlocks potential. We provide automation, provide data insights & security solutions to streamline workflows, empower informed decisions & safeguard your business.
                     </p>
 
-                    <Link 
-                      href="/contact-us/" 
+                    <Link
+                      href="/contact-us/"
                       className="btn btn-primary"
                       data-aos="fade-in"
                       data-aos-duration="1000"
@@ -73,7 +72,7 @@ const MainBanner: React.FC = () => {
                 </div>
 
                 <div className="col-lg-4">
-                  <div 
+                  <div
                     className="video-box"
                     data-aos="zoom-in"
                     data-aos-duration="1000"
