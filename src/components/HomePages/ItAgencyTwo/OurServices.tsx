@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const servicesData = [
@@ -74,7 +74,7 @@ const OurServices: React.FC = () => {
           </div>
 
           <div className="row justify-content-center">
-            {servicesData &&
+            {/* {servicesData &&
               servicesData.slice(0, 6).map((value, i) => (
                 <div
                   className="col-lg-4 
@@ -105,8 +105,6 @@ const OurServices: React.FC = () => {
                       }}
                     ></div>
                     <div style={{ position: "relative", zIndex: 1, padding: "20px" }}>
-
-                      {/* <i className={value.iconName}></i> */}
                       <h3>
                         <Link href={value.viewDetails}>{value.title}</Link>
                       </h3>
@@ -114,6 +112,10 @@ const OurServices: React.FC = () => {
                     </div>
                   </div>
                 </div>
+              ))} */}
+            {servicesData &&
+              servicesData.slice(0, 6).map((value, i) => (
+                <ServicesCard value={value} i={i} />
               ))}
           </div>
         </div>
@@ -123,3 +125,41 @@ const OurServices: React.FC = () => {
 };
 
 export default OurServices;
+
+const ServicesCard = ({ value, i }: any) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div
+      className="col-lg-4 col-sm-6"
+      key={i}
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-delay={value.aosDelay}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div
+        className="service-card-one white-bg border"
+        style={{
+          padding: 0,
+          minHeight: "300px",
+          position: "relative",
+          overflow: "hidden",
+          backgroundImage: `url(${value.bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className={`servicecard-title ${hovered ? 'hovered' : ''}`}>
+          <h3>
+            <Link href={value.viewDetails} className="text-white" style={{ color: "white" }}>
+              {value.title}
+            </Link>
+          </h3>
+          {hovered && <p style={{ color: "white", fontWeight: "600" }}>{value.shortText}</p>}
+        </div>
+      </div>
+    </div>
+  )
+}
