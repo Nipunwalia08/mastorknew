@@ -58,6 +58,17 @@ const servicesData = [
   //   aosDelay: "600",
   // },
 ];
+type ServiceData = {
+  aosDelay: string;
+  bgImage: string;
+  viewDetails: string;
+  title: string;
+  shortText: string;
+};
+
+interface ServicesCardProps {
+  value: ServiceData;
+}
 
 const Services: React.FC = () => {
   return (
@@ -74,12 +85,61 @@ const Services: React.FC = () => {
 
           <div className="row justify-content-center">
             {servicesData &&
-              servicesData.slice(0, 6).map((value, i) => (
-                <ServicesCard value={value} i={i} />
-              ))}
+              servicesData.slice(0, 6).map((value, i) => {
+                return (
+                  <ServicesCard value={value} key={i} />
+                )
+              })}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Services;
 
 
-            {/* {servicesData &&
+const ServicesCard: React.FC<ServicesCardProps> = ({ value }) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div
+      className="col-lg-6 col-sm-6"
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-delay={value.aosDelay}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div
+        className="service-card-one white-bg border"
+        style={{
+          padding: 0,
+          minHeight: "300px",
+          position: "relative",
+          overflow: "hidden",
+          backgroundImage: `url(${value.bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className={`servicecard-title ${hovered ? 'hovered' : ''}`}>
+          <h3>
+            <Link href={value.viewDetails} className="text-white" style={{ color: "white" }}>
+              {value.title}
+            </Link>
+          </h3>
+          {hovered && <p style={{ color: "white", fontWeight: "600" }}>{value.shortText}</p>}
+
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+{/* {servicesData &&
               servicesData.slice(0, 6).map((value, i) => (
                 <div
                   className="col-lg-6 col-sm-6"
@@ -122,7 +182,7 @@ const Services: React.FC = () => {
                 </div>
               ))} */}
 
-            {/* {servicesData &&
+{/* {servicesData &&
               servicesData.slice(0, 6).map((value, i) => (
                 <div
                   className="col-lg-6 
@@ -152,51 +212,3 @@ const Services: React.FC = () => {
                     </div>
                 </div>
               ))} */}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default Services;
-
-
-const ServicesCard = ({ value, i }: any) => {
-  const [hovered, setHovered] = useState(false);
-  return (
-    <div
-      className="col-lg-6 col-sm-6"
-      key={i}
-      data-aos="fade-in"
-      data-aos-duration="1000"
-      data-aos-delay={value.aosDelay}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
-      <div
-        className="service-card-one white-bg border"
-        style={{
-          padding: 0,
-          minHeight: "300px",
-          position: "relative",
-          overflow: "hidden",
-          backgroundImage: `url(${value.bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className={`servicecard-title ${hovered ? 'hovered' : ''}`}>
-          <h3>
-            <Link href={value.viewDetails} className="text-white" style={{ color: "white" }}>
-              {value.title}
-            </Link>
-          </h3>
-          {hovered && <p style={{ color: "white", fontWeight: "600" }}>{value.shortText}</p>}
-
-        </div>
-      </div>
-    </div>
-  )
-}
