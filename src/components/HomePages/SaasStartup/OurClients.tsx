@@ -8,37 +8,32 @@ import Image from "next/image";
 const ourClientsData = [
   {
     id: "1",
-    image: "/images/business-consulting/partner-white1.png",
+    image: "/images/business-consulting/Microsoft-Power-BI-Symbol.png",
     url: "#",
   },
   {
     id: "2",
-    image: "/images/business-consulting/partner-white2.png",
+    image: "/images/business-consulting/power-automate.png",
     url: "#",
   },
   {
     id: "3",
-    image: "/images/business-consulting/partner-white3.png",
+    image: "/images/business-consulting/microsoft-power.webp",
     url: "#",
   },
   {
     id: "4",
-    image: "/images/business-consulting/partner-white4.png",
+    image: "/images/business-consulting/Microsoft-PowerApps-Logo.png",
     url: "#",
   },
   {
     id: "5",
-    image: "/images/business-consulting/partner-white5.png",
+    image: "/images/business-consulting/Copilot - Logo.jpeg.jpg",
     url: "#",
   },
   {
     id: "6",
-    image: "/images/business-consulting/partner-white6.png",
-    url: "#",
-  },
-  {
-    id: "7",
-    image: "/images/business-consulting/partner-white4.png",
+    image: "/images/business-consulting/bubble-io-logo-vector.png",
     url: "#",
   },
 ];
@@ -91,6 +86,12 @@ const OurClients: React.FC = () => {
                         alt="image"
                         width={155}
                         height={45}
+                        style={{
+                          maxWidth: "200px",
+                          maxHeight: "80px",
+                          objectFit: "cover",
+                          // aspectRatio: "6/3"
+                        }}
                       />
                     </a>
                   </div>

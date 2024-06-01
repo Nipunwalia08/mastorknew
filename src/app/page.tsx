@@ -75,11 +75,11 @@ export default function Page() {
 
       <Feedback /> */}
 
-       {/* <LatestNewsSlider /> */} 
+      {/* <LatestNewsSlider /> */}
 
       <CtaAreaTwo />
 
-      
+
 
       <Footer />
     </>
