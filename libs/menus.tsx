@@ -5,7 +5,7 @@ export const menus = [
 	},
 	{
 		label: "Services",
-		link: "#",
+		link: "/services",
 		submenu: [
 			{
 				label: "Automation",
@@ -26,6 +26,36 @@ export const menus = [
 			{
 				label: "Consulting And Advisory",
 				link: "/consulting",
+			},
+		],
+	},
+	{
+		label: "Industries",
+		link: "/industries",
+		submenu: [
+			{
+				label: "Finance",
+				link: "/finance",
+			},
+			{
+				label: "Recruitment",
+				link: "/recruitment",
+			},
+			{
+				label: "Logistics",
+				link: "/logistics",
+			},
+			{
+				label: "Healthcare",
+				link: "/healthcare",
+			},
+			{
+				label: "Manufacturing & Retail",
+				link: "/manufacturing",
+			},
+			{
+				label: "Gaming",
+				link: "/gaming",
 			},
 		],
 	},

@@ -9,7 +9,7 @@ const servicesData = [
     title: "Finance",
     shortText:
       "Enhance regulatory compliance, streamline budgeting, and optimize workforce management.",
-    viewDetails: "",
+    viewDetails: "/finance",
     aosDelay: "100",
     bgImage: "/images/automationsPictures/finance.png"
   },
@@ -18,7 +18,7 @@ const servicesData = [
     title: "Recruitment",
     shortText:
       "Automate resume screening, scheduling, and onboarding for efficient talent acquisition.",
-    viewDetails: "",
+    viewDetails: "/recruitment",
     aosDelay: "200",
     bgImage: "/images/automationsPictures/recruitment.png"
   },
@@ -27,7 +27,7 @@ const servicesData = [
     title: "Logistics",
     shortText:
       "Improve fleet management and warehouse operations to boost efficiency and reduce costs.",
-    viewDetails: "",
+    viewDetails: "/logistics",
     aosDelay: "300",
     bgImage: "/images/automationsPictures/logistics.png"
   },
@@ -36,7 +36,7 @@ const servicesData = [
     title: "Healthcare",
     shortText:
       "Transform patient monitoring, appointment scheduling, and EHR management for better care.",
-    viewDetails: "",
+    viewDetails: "/healthcare",
     aosDelay: "400",
     bgImage: "/images/automationsPictures/healthcare.png"
   },
@@ -45,18 +45,18 @@ const servicesData = [
     title: "Manufacturing",
     shortText:
       "Optimize inventory, enhance maintenance practices, and streamline workflow automation.",
-    viewDetails: "",
+    viewDetails: "/manufacturing",
     aosDelay: "500",
     bgImage: "/images/automationsPictures/manufacturing.png"
   },
   {
     iconName: "pe-7s-users bg-ff612f",
-    title: "Retail",
+    title: "Gaming",
     shortText:
-      "Automate order fulfillment and inventory management to improve efficiency and customer satisfaction.",
-    viewDetails: "",
+      "Automate a versatile and exciting real cash multi-gaming casino application designed for enthusiasts of card games and more.",
+    viewDetails: "/gaming",
     aosDelay: "600",
-    bgImage: "/images/automationsPictures/retail.png"
+    bgImage: "/images/automationsPictures/gaming.webp"
   },
 ];
 type ServiceData = {

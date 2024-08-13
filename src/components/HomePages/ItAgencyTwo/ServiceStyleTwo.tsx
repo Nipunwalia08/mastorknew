@@ -17,7 +17,7 @@ const ServiceStyleTwo: React.FC = () => {
       <div className="service-style-two ptb-100 bg-fcfbfb">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div 
                 className="service-info pr-50"
                 data-aos="fade-in"
@@ -54,7 +54,7 @@ const ServiceStyleTwo: React.FC = () => {
                     </div>
                     <div className="feature-list">
                       <i className="fa-solid fa-circle-check"></i>
-                      MIS Automation
+                      Top Management Automation
                     </div>
                     {/* <div className="feature-list">
                       <i className="fa-solid fa-circle-check"></i>
@@ -71,7 +71,7 @@ const ServiceStyleTwo: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div 
                 className="service-right-img"
                 data-aos="fade-in"
@@ -93,7 +93,7 @@ const ServiceStyleTwo: React.FC = () => {
       <div className="service-style-two ptb-100">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div 
                 className="service-left-img"
                 data-aos="fade-in"
@@ -109,7 +109,7 @@ const ServiceStyleTwo: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div 
                 className="service-info pl-50"
                 data-aos="fade-in"
@@ -158,7 +158,7 @@ const ServiceStyleTwo: React.FC = () => {
                     </div>
                     <div className="feature-list">
                       <i className="fa-solid fa-circle-check"></i>
-                      MIS Automation
+                      Top Management Automation
                     </div>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ const ServiceStyleTwo: React.FC = () => {
   <div className="col-sm-4 col-md-6 col-lg-8 col-xl-10">
     <div className="feature-list" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
       <i className="fa-solid fa-circle-check"></i>
-      MIS Automation
+      Top Management Automation
     </div>
    
   </div>
@@ -262,7 +262,7 @@ const ServiceStyleTwo: React.FC = () => {
       <div className="service-style-two ptb-100">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-8">
               <div 
                 className="service-info pr-50"
                 data-aos="fade-in"
@@ -311,7 +311,7 @@ const ServiceStyleTwo: React.FC = () => {
   <div className="col-sm-4 col-md-6 col-lg-8 col-xl-10">
     <div className="feature-list" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
       <i className="fa-solid fa-circle-check"></i>
-      MIS Automation
+      Top Management Automation
     </div>
    
   </div>
@@ -325,7 +325,7 @@ const ServiceStyleTwo: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div 
                 className="service-right-img"
                 data-aos="fade-in"
@@ -347,7 +347,7 @@ const ServiceStyleTwo: React.FC = () => {
       <div className="service-style-two ptb-100 bg-fcfbfb">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div 
                 className="service-left-img"
                 data-aos="fade-in"
@@ -363,7 +363,7 @@ const ServiceStyleTwo: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-8">
               <div 
                 className="service-info pl-50"
                 data-aos="fade-in"
@@ -404,7 +404,7 @@ const ServiceStyleTwo: React.FC = () => {
                     </div>
                     <div className="feature-list">
                       <i className="fa-solid fa-circle-check"></i>
-                      MIS Automation
+                      Top Management Automation
                     </div>
                     {/* <div className="feature-list">
                       <i className="fa-solid fa-circle-check"></i>
@@ -412,7 +412,7 @@ const ServiceStyleTwo: React.FC = () => {
                     </div>
                     <div className="feature-list">
                       <i className="fa-solid fa-circle-check"></i>
-                      MIS Automation
+                      Top Management Automation
                     </div> */}
                   </div>
                 </div>
@@ -431,7 +431,7 @@ const ServiceStyleTwo: React.FC = () => {
       <div className="service-style-two ptb-100">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div 
                 className="service-info pr-50"
                 data-aos="fade-in"
@@ -486,7 +486,7 @@ const ServiceStyleTwo: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div 
                 className="service-right-img"
                 data-aos="fade-in"

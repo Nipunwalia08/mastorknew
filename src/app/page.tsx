@@ -55,6 +55,7 @@ import LatestNewsSlider from "../components/Common/LatestNewsSlider";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Partner from "../components/Common/Partner";
 import Footer from "../components/Layouts/Footer";
+import OurServices from "../components/HomePages/ItAgencyTwo/OurServices";
 
 export default function Page() {
   return (
@@ -66,7 +67,7 @@ export default function Page() {
       <Services />
 
       <About />
-
+      <OurServices/>
       <Partner />
 
       <OurWorks />

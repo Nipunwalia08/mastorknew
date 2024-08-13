@@ -104,7 +104,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ value }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className="col-lg-6 col-sm-6"
+      className="col-lg-4 col-sm-6"
       data-aos="fade-in"
       data-aos-duration="1000"
       data-aos-delay={value.aosDelay}
@@ -114,7 +114,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ value }) => {
       <div
         className="service-card-one white-bg border"
         style={{
-          padding: 0,
+          padding: 2,
           minHeight: "300px",
           position: "relative",
           overflow: "hidden",
