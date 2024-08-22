@@ -29,7 +29,7 @@ const MainBanner: React.FC = () => {
                   data-aos-delay="100"
                   style={{ fontSize: "45px" }}
                 >
-                  Teen Patti Master Real Cash Multi Gaming Casino Application for Sale
+                  Ready for the ultimate experience
                 </h1>
 
                 <p
@@ -37,7 +37,7 @@ const MainBanner: React.FC = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Are you looking to kickstart your own online gaming platform? Look no further! We are offering the full source code for Teen Patti Master, a versatile and exciting real cash multi-gaming casino application designed for enthusiasts of card games and more.
+                  Are you looking to kickstart your own online gaming platform? Look no further! We are offering the full source code for all the games mentioned, a versatile and exciting real cash multi-gaming casino application designed for enthusiasts of card games and more.
                 </p>
 
                 <Link
@@ -52,7 +52,7 @@ const MainBanner: React.FC = () => {
                   data-aos-duration="1000"
                   data-aos-delay="300"
                 >
-                  All in one gaming platform<i className="fas fa-chevron-right"></i>
+                  Get your gaming platform today<i className="fas fa-chevron-right" style={{marginLeft:"7px"}}></i>
                 </Link>
               </div>
             </div>

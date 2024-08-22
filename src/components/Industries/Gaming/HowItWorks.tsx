@@ -26,7 +26,7 @@ const howItWorksData = [
     iconName: "fa-solid fa-arrows-rotate",
     title: "Extended Version Code:",
     shortText:
-      "For the extended version features, please email us at info@devmasters.com or Devmastersindia@gmail.com with your purchase code.",
+      "For the extended version features, please email us at hello@mastork.com with your purchase code.",
     aosDelay: "300",
   },
 ];
