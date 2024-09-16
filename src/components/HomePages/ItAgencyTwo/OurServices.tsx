@@ -77,7 +77,7 @@ const OurServices: React.FC = () => {
       <div className="pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            <h2>Industries Benefiting from Automation</h2>
+            <h2>Industries Benefiting from Intelligent Automation</h2>
             {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna.

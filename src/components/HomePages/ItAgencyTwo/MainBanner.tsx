@@ -34,7 +34,7 @@ const MainBanner: React.FC = () => {
                         data-aos-duration="1000" 
                         data-aos-delay="100"
                       >
-                        Automation Solution
+                        Intelligent Automation Solution
                       </h1>
 
                       {/* <p

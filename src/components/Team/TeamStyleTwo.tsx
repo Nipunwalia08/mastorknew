@@ -120,16 +120,45 @@ const teamMemberData = [
       // },
     ],
   },
+  // {
+  //   image: "/images/team/3.jpg",
+  //   name: "Chirag Dodiya",
+  //   designation: "Technical Lead",
+  //   aosDelay: "500",
+
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://www.linkedin.com/in/chiragdotco/",
+  //     },
+  //     // {
+  //     //   iconName: "fa-brands fa-twitter",
+  //     //   url: "https://twitter.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-facebook-f",
+  //     //   url: "https://facebook.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-instagram",
+  //     //   url: "https://instagram.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-dribbble",
+  //     //   url: "https://dribbble.com/",
+  //     // },
+  //   ],
+  // },
   {
-    image: "/images/team/3.jpg",
-    name: "Chirag Dodiya",
-    designation: "Technical Lead",
+    image: "/images/team/sanjev.jpeg",
+    name: "Sanjeev Aggarwal",
+    designation: "Advisor",
     aosDelay: "500",
 
     socialLinks: [
       {
         iconName: "fa-brands fa-linkedin-in",
-        url: "https://www.linkedin.com/in/chiragdotco/",
+        url: "https://www.linkedin.com/in/sanjeev-aggarwal/",
       },
       // {
       //   iconName: "fa-brands fa-twitter",
@@ -149,6 +178,35 @@ const teamMemberData = [
       // },
     ],
   },
+  {
+    image: "/images/team/abhishek.jpeg",
+    name: "Abhishek Tiwari",
+    designation: "Senior Business Consultant",
+    aosDelay: "600",
+
+    socialLinks: [
+      {
+        iconName: "fa-brands fa-linkedin-in",
+        url: "https://www.linkedin.com/in/abhishektiwarrii/",
+      },
+      // {
+      //   iconName: "fa-brands fa-twitter",
+      //   url: "https://twitter.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-facebook-f",
+      //   url: "https://facebook.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-instagram",
+      //   url: "https://instagram.com/",
+      // },
+      // {
+      //   iconName: "fa-brands fa-dribbble",
+      //   url: "https://dribbble.com/",
+      // },
+    ],
+  }
   // {
   //   image: "/images/team/team11.jpg",
   //   name: "Williams Smith",

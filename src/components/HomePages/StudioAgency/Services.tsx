@@ -6,7 +6,7 @@ import Link from "next/link";
 const servicesData = [
   {
     iconName: "pe-7s-rocket bg-13c4a1",
-    title: "Automation",
+    title: "Intelligent Automation",
     shortText:
       "Streamline your operations and boost efficiency with our cutting-edge automation solutions.",
     viewDetails: "/Automation/",
