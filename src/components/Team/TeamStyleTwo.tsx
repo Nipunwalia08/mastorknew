@@ -179,7 +179,7 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/abhishek.jpeg",
+    image: "/images/team/abhinew.jpg",
     name: "Abhishek Tiwari",
     designation: "Senior Business Consultant",
     aosDelay: "600",
