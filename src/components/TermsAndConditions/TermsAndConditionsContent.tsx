@@ -22,9 +22,9 @@ const TermsAndConditionsContent: React.FC = () => {
           <ul>
             <li>Modify or copy the materials;</li>
             <li>Use the materials for any commercial purpose or public display;</li>
-            <li>Attempt to reverse engineer any software contained on Mastork's Website;</li>
+            <li>Attempt to reverse engineer any software contained on Mastork&apos;s Website;</li>
             <li>Remove any copyright or other proprietary notations from the materials; or</li>
-            <li>Transfer the materials to another person or "mirror" the materials on any other server.</li>
+            <li>Transfer the materials to another person or &quot;mirror&quot; the materials on any other server.</li>
           </ul>
           <p>
             Mastork may terminate your viewing rights if you violate any of these restrictions. Upon termination, you must destroy any downloaded materials in your possession, whether in printed or electronic format. These Terms of Service have been created with the help of the Terms Of Service Generator.
@@ -32,22 +32,22 @@ const TermsAndConditionsContent: React.FC = () => {
 
           <h4>Disclaimer</h4>
           <p>
-            All the materials on Mastork's Website are provided "as is". Mastork makes no warranties, either expressed or implied, and hereby negates all other warranties. Furthermore, Mastork does not make any representations concerning the accuracy or reliability of the materials on its Website or otherwise related to such materials or any sites linked to this Website.
+            All the materials on Mastork&apos;s Website are provided &quot;as is&quot;. Mastork makes no warranties, either expressed or implied, and hereby negates all other warranties. Furthermore, Mastork does not make any representations concerning the accuracy or reliability of the materials on its Website or otherwise related to such materials or any sites linked to this Website.
           </p>
 
           <h4>Limitations</h4>
           <p>
-            Mastork or its suppliers will not be held accountable for any damages that arise with the use or inability to use the materials on Mastork's Website, even if Mastork or an authorized representative of this Website has been notified, orally or in writing, of the possibility of such damage. Some jurisdictions do not allow limitations on implied warranties or limitations of liability for incidental damages; these limitations may not apply to you.
+            Mastork or its suppliers will not be held accountable for any damages that arise with the use or inability to use the materials on Mastork&apos;s Website, even if Mastork or an authorized representative of this Website has been notified, orally or in writing, of the possibility of such damage. Some jurisdictions do not allow limitations on implied warranties or limitations of liability for incidental damages; these limitations may not apply to you.
           </p>
 
           <h4>Revisions and Errata</h4>
           <p>
-            The materials appearing on Mastork's Website may include technical, typographical, or photographic errors. Mastork does not promise that any of the materials on this Website are accurate, complete, or current. Mastork may change the materials contained on its Website at any time without notice. Mastork does not make any commitment to update the materials.
+            The materials appearing on Mastork&apos;s Website may include technical, typographical, or photographic errors. Mastork does not promise that any of the materials on this Website are accurate, complete, or current. Mastork may change the materials contained on its Website at any time without notice. Mastork does not make any commitment to update the materials.
           </p>
 
           <h4>Links</h4>
           <p>
-            Mastork has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Mastork of the site. The use of any linked website is at the user’s own risk.
+            Mastork has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Mastork of the site. The use of any linked website is at the user&apos;s own risk.
           </p>
 
           <h4>Site Terms of Use Modifications</h4>
@@ -62,7 +62,7 @@ const TermsAndConditionsContent: React.FC = () => {
 
           <h4>Governing Law</h4>
           <p>
-            Any claim related to Mastork's Website shall be governed by the laws of af without regard to its conflict of law provisions.
+            Any claim related to Mastork&apos;s Website shall be governed by the laws of af without regard to its conflict of law provisions.
           </p>
         </div>
       </div>
@@ -71,4 +71,3 @@ const TermsAndConditionsContent: React.FC = () => {
 };
 
 export default TermsAndConditionsContent;
-
