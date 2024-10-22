@@ -17,7 +17,7 @@ const TermsAndConditionsContent: React.FC = () => {
 
           <h4>Use Licence</h4>
           <p>
-            Permission is granted to temporarily download one copy of the materials on Mastork's Website for personal, non-commercial transitory viewing only. This is the grant of a licence, not a transfer of title, and under this licence, you may not:
+            Permission is granted to temporarily download one copy of the materials on Mastorks Website for personal, non-commercial transitory viewing only. This is the grant of a licence, not a transfer of title, and under this licence, you may not:
           </p>
           <ul>
             <li>Modify or copy the materials;</li>
