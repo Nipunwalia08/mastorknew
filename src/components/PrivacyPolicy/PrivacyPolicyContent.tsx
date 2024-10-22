@@ -1,99 +1,97 @@
 "use client";
 
-import React from "react"; 
+import React from "react";
 
 const PrivacyPolicyContent: React.FC = () => {
   return (
     <>
       <div className="text-container ptb-100">
         <div className="container">
-          <h4>What is Lorem Ipsum?</h4>
+          <h4>Privacy Policy</h4>
+          <p><strong>Last updated: 20/09/2023</strong></p>
 
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            At Mastork, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you interact with our services, including our website, AI consulting, and AI SaaS solutions. By using our services, you consent to the practices described in this Privacy Policy.
           </p>
 
-          <h4>Where does it come from?</h4>
+          <h4>Information We Collect</h4>
+
+          <p><strong>Personal Information</strong></p>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit
-            amet...
+            We may collect personal information that you provide directly to us, such as your name, email address, phone number, company information, and payment details when you engage with our services, request information, or sign up for our newsletter.
           </p>
 
+          <p><strong>Usage Information</strong></p>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            We may automatically collect information about your interactions with our website and services, including your IP address, device information, browser type, and browsing history. We use cookies and similar tracking technologies to gather this information.
           </p>
 
-          <h4>Where can I get some?</h4>
+          <h4>How We Use Your Information</h4>
+
+          <p><strong>Providing and Improving Our Services</strong></p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim.
+            We use the information we collect to provide and enhance our AI consulting and AI SaaS solutions, including developing and improving our technology, responding to your inquiries, and delivering tailored content.
           </p>
 
+          <p><strong>Communication</strong></p>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don&apos;t look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn&apos;t anything embarrassing hidden in the
-            middle of text. All the Lorem Ipsum generators on the Internet tend
-            to repeat predefined chunks as necessary, making this the first true
-            generator on the Internet. It uses a dictionary of over 200 Latin
-            words, combined with a handful of model sentence structures, to
-            generate Lorem Ipsum which looks reasonable. The generated Lorem
-            Ipsum is therefore always free from repetition, injected.
+            We may use your contact information to send you updates about our services, promotions, and other relevant communications. You can opt out of these communications at any time.
           </p>
 
+          <p><strong>Legal Compliance</strong></p>
           <p>
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system, and expound the actual teachings of the great
-            explorer of the truth, the master-builder of human happiness. No one
-            rejects, dislikes, or avoids pleasure itself, because it is
-            pleasure, but because those who do not know how to pursue pleasure
-            rationally encounter consequences that are extremely painful. Nor
-            again is there anyone who loves or pursues or desires to obtain pain
-            of itself, because it is pain, but because occasionally
-            circumstances occur in which toil and pain can procure him some
-            great pleasure. To take a trivial example, which of us ever
-            undertakes laborious physical exercise, except to obtain some
-            advantage from it? But who has any right to find fault with a man
-            who chooses to enjoy a pleasure that has no annoying consequences,
-            or one who avoids a pain that produces no resultant pleasure?
+            We may process your information as required by law, regulation, or legal process, or to protect our rights, privacy, safety, or property.
+          </p>
+
+          <h4>Sharing Your Information</h4>
+
+          <p>
+            We do not sell, trade, or rent your personal information to third parties. However, we may share your information under the following circumstances:
+          </p>
+
+          <p><strong>Service Providers</strong></p>
+          <p>
+            We may share your information with third-party service providers who assist us in operating our business, including payment processors, hosting providers, and analytics services.
+          </p>
+
+          <p><strong>Business Partners</strong></p>
+          <p>
+            We may share your information with business partners when necessary to provide our services or to offer joint promotions and initiatives.
+          </p>
+
+          <p><strong>Legal Requirements</strong></p>
+          <p>
+            We may disclose your information to comply with applicable laws, regulations, or legal processes, or to respond to lawful requests from governmental authorities.
+          </p>
+
+          <h4>Security</h4>
+
+          <p>
+            We take reasonable measures to protect your information from unauthorized access, disclosure, alteration, and destruction. However, no method of transmission over the internet or electronic storage is entirely secure, and we cannot guarantee absolute security.
+          </p>
+
+          <h4>Your Choices</h4>
+
+          <p><strong>Access and Update</strong></p>
+          <p>
+            You may access and update your personal information by contacting us at <a href="mailto:hello@mastork.com">hello@mastork.com</a>. We will make reasonable efforts to accommodate your request.
+          </p>
+
+          <p><strong>Opt-Out</strong></p>
+          <p>
+            You can opt out of receiving promotional communications from us by following the unsubscribe instructions in our emails.
+          </p>
+
+          <h4>Changes to this Privacy Policy</h4>
+
+          <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the revised Privacy Policy on our website.
+          </p>
+
+          <h4>Contact Us</h4>
+
+          <p>
+            If you have any questions or concerns about this Privacy Policy or our data practices, please feel free to contact us at <a href="mailto:hello@mastork.com">hello@mastork.com</a>. By using our services, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.
           </p>
         </div>
       </div>
