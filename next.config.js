@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  transpilePackages: ['mui-tel-input'],
 }
 
 module.exports = nextConfig
