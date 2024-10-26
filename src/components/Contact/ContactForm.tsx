@@ -1,15 +1,17 @@
 "use client";
 
 import React, { ReactElement, useState } from "react";
-import { Box, TextField, Button } from "@mui/material";
+import { Box, TextField, Button, Snackbar } from "@mui/material";
 import { MuiTelInput } from "mui-tel-input";
 
-import { collection, addDoc } from "firebase/firestore"; 
+import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/config.js";
 
 // import { SMTPClient } from 'emailjs';
 
-
+/**
+ * Form data interface
+ */
 interface FormState {
   name: string;
   email: string;
@@ -25,8 +27,34 @@ interface FormState {
 // 	ssl: true,
 // });
 
-
 const ContactForm: React.FC = () => {
+  /**
+   * State manager for snackbar
+   */
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+
+  const [snackbarText, setSnackbarText] = useState("Detials saved")
+
+  /**
+   * Snackbar Handler
+   */
+  const handleSnackbarClick = () => {
+    setSnackbarOpen(true);
+  };
+
+  /**
+   * Snackbar Handler
+   */
+  const handleSnackbarClose = (reason: any) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbarOpen(false);
+  };
+
+  /**
+   * Form data state management
+   */
   const [formData, setFormData] = useState<FormState>({
     name: "",
     email: "",
@@ -35,22 +63,49 @@ const ContactForm: React.FC = () => {
     message: "",
   });
 
+  const [emailError, setEmailError] = useState(false);
+
+  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Za-z]{2,}$/i;
+
+  /**
+   * To handle changes made to input fields
+   * @param e : React change event
+   */
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+
+    if(name === "email"){
+      setEmailError(!emailRegex.test(value));
+      if(emailError === true) return;
+    }
+
     setFormData({ ...formData, [name]: value });
   };
 
+  /**
+   * To handle form submission
+   * @param e : React form event
+   */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
 
+    setSnackbarText("Details saved")
+
+    if(emailError === true) {
+      setSnackbarText("Please enter a valid email")
+      handleSnackbarClick()
+      return;
+    }
+
+    // Handle form submission logic here
     try {
       const docRef = await addDoc(collection(db, "contacFormData"), formData);
+      handleSnackbarClick()
       // sendEmail();
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
 
     // Reset form data after submission if needed
@@ -74,9 +129,8 @@ const ContactForm: React.FC = () => {
    */
   const handlePhoneChange = (newValue: any, info: any) => {
     setValue(newValue);
-    setFormData({...formData, mobile: info.numberValue})
+    setFormData({ ...formData, mobile: info.numberValue });
   };
-
 
   /**
    * Send email upon saving field to firebae
@@ -104,13 +158,13 @@ const ContactForm: React.FC = () => {
 
         <form onSubmit={handleSubmit}>
           <div className="container">
-              <Box
-                className= "row"
-                sx={{
-                  "& .MuiTextField-root": {  my: 1 },
-                }}
-              >
-                <div className="col-md-6">
+            <Box
+              className="row"
+              sx={{
+                "& .MuiTextField-root": { my: 1 },
+              }}
+            >
+              <div className="col-md-6">
                 <TextField
                   id="indexFormName"
                   label="Name"
@@ -119,10 +173,10 @@ const ContactForm: React.FC = () => {
                   fullWidth
                   required
                   onChange={handleChange}
-                  />
-                </div>
+                />
+              </div>
 
-                <div className="col-md-6">
+              <div className="col-md-6">
                 <TextField
                   id="indexFormEmail"
                   label="Email"
@@ -130,11 +184,12 @@ const ContactForm: React.FC = () => {
                   variant="outlined"
                   fullWidth
                   required
+                  error={emailError}
                   onChange={handleChange}
                 />
-                </div>
+              </div>
 
-                <div className="col-md-6">
+              <div className="col-md-6">
                 <TextField
                   id="indexFormSubject"
                   label="Subject"
@@ -144,9 +199,9 @@ const ContactForm: React.FC = () => {
                   required
                   onChange={handleChange}
                 />
-                </div>
+              </div>
 
-                <div className="col-md-6">
+              <div className="col-md-6">
                 <MuiTelInput
                   defaultCountry="IN"
                   placeholder="Mobile"
@@ -156,9 +211,9 @@ const ContactForm: React.FC = () => {
                   required
                   onChange={handlePhoneChange}
                 />
-                </div>
+              </div>
 
-                <div>
+              <div>
                 <TextField
                   id="indexFormCustomMessage"
                   label="Message"
@@ -169,11 +224,22 @@ const ContactForm: React.FC = () => {
                   required
                   onChange={handleChange}
                 />
-                </div>
-              </Box>
-              <Button type="submit" className="mt-2 btn btn-primary" variant="contained" fullWidth>
-                  Submit
-              </Button>
+              </div>
+            </Box>
+            <Button
+              type="submit"
+              className="mt-2 btn btn-primary"
+              variant="contained"
+              fullWidth
+            >
+              Submit
+            </Button>
+            <Snackbar
+              open={snackbarOpen}
+              autoHideDuration={3000}
+              onClose={handleSnackbarClose}
+              message={snackbarText}
+            />
           </div>
         </form>
       </div>

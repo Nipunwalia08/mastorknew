@@ -8,12 +8,12 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDOXDITA6SzoQwTvc4fSu-gxsbgbP_vsT8",
+  apiKey: process.env.firebaseApiKey,
   authDomain: "mastork-form-data.firebaseapp.com",
   projectId: "mastork-form-data",
   storageBucket: "mastork-form-data.appspot.com",
-  messagingSenderId: "130319959711",
-  appId: "1:130319959711:web:c27a377d57e583e21204aa",
+  messagingSenderId: process.env.firebaseMessagingSenderId,
+  appId: process.env.firebaseAppId,
   measurementId: "G-E8N708ZC78"
 };
 
