@@ -7,7 +7,7 @@ import { MuiTelInput } from "mui-tel-input";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/config.js";
 
-// import { SMTPClient } from 'emailjs';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 /**
  * Form data interface
@@ -16,23 +16,14 @@ interface FormState {
   name: string;
   email: string;
   mobile: string;
-  subject: string;
   message: string;
 }
 
-// const client = new SMTPClient({
-// 	user: 'hello@mastork.com',
-// 	password: 'Mastork@123',
-// 	host: 'sparshmoharana@gmail.com',
-// 	ssl: true,
-// });
-
 const ContactForm: React.FC = () => {
   /**
-   * State manager for snackbar
+   * State managers for snackbar
    */
   const [snackbarOpen, setSnackbarOpen] = useState(false);
-
   const [snackbarText, setSnackbarText] = useState("Detials saved")
 
   /**
@@ -59,12 +50,15 @@ const ContactForm: React.FC = () => {
     name: "",
     email: "",
     mobile: "",
-    subject: "",
     message: "",
   });
 
+  /**
+   * Variables for Email validation
+   * State manager for email error
+   * Email regex
+   */
   const [emailError, setEmailError] = useState(false);
-
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Za-z]{2,}$/i;
 
   /**
@@ -78,7 +72,6 @@ const ContactForm: React.FC = () => {
 
     if(name === "email"){
       setEmailError(!emailRegex.test(value));
-      if(emailError === true) return;
     }
 
     setFormData({ ...formData, [name]: value });
@@ -101,21 +94,19 @@ const ContactForm: React.FC = () => {
 
     // Handle form submission logic here
     try {
-      const docRef = await addDoc(collection(db, "contacFormData"), formData);
+      const docRef = await addDoc(collection(db, "contactFormData"), formData);
+      sendEmail(formData);
       handleSnackbarClick()
-      // sendEmail();
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        message: "",
+      });
+      setValue("") //Set country value to null after form submission  
     } catch (error) {
       console.log(error);
     }
-
-    // Reset form data after submission if needed
-    setFormData({
-      name: "",
-      email: "",
-      mobile: "",
-      subject: "",
-      message: "",
-    });
   };
 
   /**
@@ -133,21 +124,34 @@ const ContactForm: React.FC = () => {
   };
 
   /**
-   * Send email upon saving field to firebae
+   * 
+   * @param data 
+   * @returns 
    */
-  // const sendEmail = async () => {
-  //   try {
-  //     const message = await client.sendAsync({
-  //       text: 'i hope this works',
-  //       from: '<tbd>',
-  //       to: '<dhruv@mastork.com>,',
-  //       subject: 'testing emailjs',
-  //     });
-  //     console.log(message);
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // }
+  const sendEmail = async (data: FormState) => {
+    const templateParams = {
+      to_name: 'Dhruv',
+      from_name: data.name,
+      message: data.message,
+    };
+    try {
+      await emailjs.send(
+        'service_a7pbx6r',
+        'template_k68ov4x',
+        templateParams,
+        {
+          publicKey: "AwLUmb8Sw38zwFiTl"
+        },
+      );
+    } 
+    catch (err) {
+      if (err instanceof EmailJSResponseStatus) {
+        console.log('EMAILJS FAILED...', err);
+        return;
+      }
+      console.log("Error ", err)
+    }
+  }
 
   return (
     <>
@@ -159,49 +163,33 @@ const ContactForm: React.FC = () => {
         <form onSubmit={handleSubmit}>
           <div className="container">
             <Box
-              className="row"
               sx={{
                 "& .MuiTextField-root": { my: 1 },
               }}
             >
-              <div className="col-md-6">
                 <TextField
                   id="indexFormName"
                   label="Name"
                   name="name"
+                  value={formData["name"]}
                   variant="outlined"
                   fullWidth
                   required
                   onChange={handleChange}
                 />
-              </div>
 
-              <div className="col-md-6">
                 <TextField
                   id="indexFormEmail"
                   label="Email"
                   name="email"
+                  value={formData["email"]}
                   variant="outlined"
                   fullWidth
                   required
                   error={emailError}
                   onChange={handleChange}
                 />
-              </div>
 
-              <div className="col-md-6">
-                <TextField
-                  id="indexFormSubject"
-                  label="Subject"
-                  name="subject"
-                  variant="outlined"
-                  fullWidth
-                  required
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="col-md-6">
                 <MuiTelInput
                   defaultCountry="IN"
                   placeholder="Mobile"
@@ -211,35 +199,32 @@ const ContactForm: React.FC = () => {
                   required
                   onChange={handlePhoneChange}
                 />
-              </div>
 
-              <div>
                 <TextField
-                  id="indexFormCustomMessage"
                   label="Message"
                   name="message"
+                  value={formData["message"]}
                   multiline
                   rows={4}
                   fullWidth
                   required
                   onChange={handleChange}
                 />
-              </div>
+
+              <Button
+                type="submit"
+                className="mt-1 mb-2 btn btn-primary"
+                variant="contained"
+                >
+                Submit
+              </Button>
+              <Snackbar
+                open={snackbarOpen}
+                autoHideDuration={3000}
+                onClose={handleSnackbarClose}
+                message={snackbarText}
+                />
             </Box>
-            <Button
-              type="submit"
-              className="mt-2 btn btn-primary"
-              variant="contained"
-              fullWidth
-            >
-              Submit
-            </Button>
-            <Snackbar
-              open={snackbarOpen}
-              autoHideDuration={3000}
-              onClose={handleSnackbarClose}
-              message={snackbarText}
-            />
           </div>
         </form>
       </div>
