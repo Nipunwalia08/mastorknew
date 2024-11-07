@@ -132,6 +132,8 @@ const ContactForm: React.FC = () => {
     const templateParams = {
       to_name: 'Dhruv',
       from_name: data.name,
+      phone: data.mobile,
+      email: data.email,
       message: data.message,
     };
     try {
