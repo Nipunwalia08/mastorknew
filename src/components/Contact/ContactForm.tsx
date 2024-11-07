@@ -1,138 +1,232 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { ReactElement, useState } from "react";
+import { Box, TextField, Button, Snackbar } from "@mui/material";
+import { MuiTelInput } from "mui-tel-input";
 
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../firebase/config.js";
+
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+
+/**
+ * Form data interface
+ */
 interface FormState {
   name: string;
   email: string;
-  number: string;
-  subject: string;
+  mobile: string;
   message: string;
 }
 
 const ContactForm: React.FC = () => {
+  /**
+   * State managers for snackbar
+   */
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarText, setSnackbarText] = useState("Detials saved")
+
+  /**
+   * Snackbar Handler
+   */
+  const handleSnackbarClick = () => {
+    setSnackbarOpen(true);
+  };
+
+  /**
+   * Snackbar Handler
+   */
+  const handleSnackbarClose = (reason: any) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbarOpen(false);
+  };
+
+  /**
+   * Form data state management
+   */
   const [formData, setFormData] = useState<FormState>({
     name: "",
     email: "",
-    number: "",
-    subject: "",
+    mobile: "",
     message: "",
   });
 
+  /**
+   * Variables for Email validation
+   * State manager for email error
+   * Email regex
+   */
+  const [emailError, setEmailError] = useState(false);
+  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Za-z]{2,}$/i;
+
+  /**
+   * To handle changes made to input fields
+   * @param e : React change event
+   */
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+
+    if(name === "email"){
+      setEmailError(!emailRegex.test(value));
+    }
+
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  /**
+   * To handle form submission
+   * @param e : React form event
+   */
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    setSnackbarText("Details saved")
+
+    if(emailError === true) {
+      setSnackbarText("Please enter a valid email")
+      handleSnackbarClick()
+      return;
+    }
+
     // Handle form submission logic here
-    console.log(formData);
-    // Reset form data after submission if needed
-    setFormData({
-      name: "",
-      email: "",
-      number: "",
-      subject: "",
-      message: "",
-    });
+    try {
+      const docRef = await addDoc(collection(db, "contactFormData"), formData);
+      sendEmail(formData);
+      handleSnackbarClick()
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        message: "",
+      });
+      setValue("") //Set country value to null after form submission  
+    } catch (error) {
+      console.log(error);
+    }
   };
+
+  /**
+   * Country selector for country input field
+   */
+  const [value, setValue] = useState("");
+
+  /**
+   * To change the selcted country to user specific country
+   * @param {*} newValue: Expects a country value
+   */
+  const handlePhoneChange = (newValue: any, info: any) => {
+    setValue(newValue);
+    setFormData({ ...formData, mobile: info.numberValue });
+  };
+
+  /**
+   * 
+   * @param data 
+   * @returns 
+   */
+  const sendEmail = async (data: FormState) => {
+    const templateParams = {
+      to_name: 'Dhruv',
+      from_name: data.name,
+      phone: data.mobile,
+      email: data.email,
+      message: data.message,
+    };
+    try {
+      await emailjs.send(
+        'service_a7pbx6r',
+        'template_k68ov4x',
+        templateParams,
+        {
+          publicKey: "AwLUmb8Sw38zwFiTl"
+        },
+      );
+    } 
+    catch (err) {
+      if (err instanceof EmailJSResponseStatus) {
+        console.log('EMAILJS FAILED...', err);
+        return;
+      }
+      console.log("Error ", err)
+    }
+  }
 
   return (
     <>
       <div className="contact-form">
         <div className="contact-title">
-          <h2>Get In Touch</h2>
-          {/* <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p> */}
+          <h2>Request a Demo</h2>
         </div>
 
         <form onSubmit={handleSubmit}>
           <div className="container">
-            <div className="contact-form-box">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      className="form-control"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
+            <Box
+              sx={{
+                "& .MuiTextField-root": { my: 1 },
+              }}
+            >
+                <TextField
+                  id="indexFormName"
+                  label="Name"
+                  name="name"
+                  value={formData["name"]}
+                  variant="outlined"
+                  fullWidth
+                  required
+                  onChange={handleChange}
+                />
 
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      className="form-control"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
+                <TextField
+                  id="indexFormEmail"
+                  label="Email"
+                  name="email"
+                  value={formData["email"]}
+                  variant="outlined"
+                  fullWidth
+                  required
+                  error={emailError}
+                  onChange={handleChange}
+                />
 
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input
-                      type="tel"
-                      name="number"
-                      placeholder="Phone number"
-                      className="form-control"
-                      value={formData.number}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
+                <MuiTelInput
+                  defaultCountry="IN"
+                  placeholder="Mobile"
+                  value={value}
+                  name="mobile"
+                  fullWidth
+                  required
+                  onChange={handlePhoneChange}
+                />
 
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="subject"
-                      placeholder="Subject"
-                      className="form-control"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
+                <TextField
+                  label="Message"
+                  name="message"
+                  value={formData["message"]}
+                  multiline
+                  rows={4}
+                  fullWidth
+                  required
+                  onChange={handleChange}
+                />
 
-                <div className="col-lg-12 col-md-12">
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      cols={30}
-                      rows={6}
-                      placeholder="Write your message..."
-                      className="form-control"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="col-lg-12 col-sm-12">
-                  <button type="submit" className="btn btn-primary">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </div>
+              <Button
+                type="submit"
+                className="mt-1 mb-2 btn btn-primary"
+                variant="contained"
+                >
+                Submit
+              </Button>
+              <Snackbar
+                open={snackbarOpen}
+                autoHideDuration={3000}
+                onClose={handleSnackbarClose}
+                message={snackbarText}
+                />
+            </Box>
           </div>
         </form>
       </div>
