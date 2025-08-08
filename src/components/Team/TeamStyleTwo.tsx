@@ -62,35 +62,35 @@ const teamMemberData = [
       // },
     ],
   },
-  {
-    image: "/images/team/Vivek_innobit_pic.jpg",
-    name: "Vivek Mudgil",
-    designation: "Technical Advisor",
-    aosDelay: "300",
+  // {
+  //   image: "/images/team/Vivek_innobit_pic.jpg",
+  //   name: "Vivek Mudgil",
+  //   designation: "Technical Advisor",
+  //   aosDelay: "300",
 
-    socialLinks: [
-      {
-        iconName: "fa-brands fa-linkedin-in",
-        url: "https://www.linkedin.com/in/vmudgil/",
-      },
-      // {
-      //   iconName: "fa-brands fa-twitter",
-      //   url: "https://twitter.com/",
-      // },
-      // {
-      //   iconName: "fa-brands fa-facebook-f",
-      //   url: "https://facebook.com/",
-      // },
-      // {
-      //   iconName: "fa-brands fa-instagram",
-      //   url: "https://instagram.com/",
-      // },
-      // {
-      //   iconName: "fa-brands fa-dribbble",
-      //   url: "https://dribbble.com/",
-      // },
-    ],
-  },
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://www.linkedin.com/in/vmudgil/",
+  //     },
+  //     // {
+  //     //   iconName: "fa-brands fa-twitter",
+  //     //   url: "https://twitter.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-facebook-f",
+  //     //   url: "https://facebook.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-instagram",
+  //     //   url: "https://instagram.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-dribbble",
+  //     //   url: "https://dribbble.com/",
+  //     // },
+  //   ],
+  // },
   {
     image: "/images/team/2.jpg",
     name: "Nipun Walia",
@@ -149,35 +149,35 @@ const teamMemberData = [
   //     // },
   //   ],
   // },
-  {
-    image: "/images/team/sanjev.jpeg",
-    name: "Sanjeev Aggarwal",
-    designation: "Advisor",
-    aosDelay: "500",
+  // {
+  //   image: "/images/team/sanjev.jpeg",
+  //   name: "Sanjeev Aggarwal",
+  //   designation: "Advisor",
+  //   aosDelay: "500",
 
-    socialLinks: [
-      {
-        iconName: "fa-brands fa-linkedin-in",
-        url: "https://www.linkedin.com/in/sanjeev-aggarwal/",
-      },
-      // {
-      //   iconName: "fa-brands fa-twitter",
-      //   url: "https://twitter.com/",
-      // },
-      // {
-      //   iconName: "fa-brands fa-facebook-f",
-      //   url: "https://facebook.com/",
-      // },
-      // {
-      //   iconName: "fa-brands fa-instagram",
-      //   url: "https://instagram.com/",
-      // },
-      // {
-      //   iconName: "fa-brands fa-dribbble",
-      //   url: "https://dribbble.com/",
-      // },
-    ],
-  },
+  //   socialLinks: [
+  //     {
+  //       iconName: "fa-brands fa-linkedin-in",
+  //       url: "https://www.linkedin.com/in/sanjeev-aggarwal/",
+  //     },
+  //     // {
+  //     //   iconName: "fa-brands fa-twitter",
+  //     //   url: "https://twitter.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-facebook-f",
+  //     //   url: "https://facebook.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-instagram",
+  //     //   url: "https://instagram.com/",
+  //     // },
+  //     // {
+  //     //   iconName: "fa-brands fa-dribbble",
+  //     //   url: "https://dribbble.com/",
+  //     // },
+  //   ],
+  // },
   {
     image: "/images/team/abhinew.jpg",
     name: "Abhishek Tiwari",
